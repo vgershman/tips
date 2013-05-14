@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/depend/actionbarsherlock/actionbarsherlock.iml" filepath="$PROJECT_DIR$/depend/actionbarsherlock/actionbarsherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tips.iml" filepath="$PROJECT_DIR$/tips.iml" />
+    </modules>
+  </component>
+</project>
+
