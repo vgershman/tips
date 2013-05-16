@@ -15,18 +15,33 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:id="@+id/tip_image"/>
-        <ImageView android:layout_height="wrap_content"
-                   android:layout_width="wrap_content"
-                   android:id="@+id/left_button"
-                   android:layout_gravity="left|bottom"/>
-        <ImageView android:layout_height="wrap_content"
-                   android:layout_width="wrap_content"
-                   android:id="@+id/right_button"
-                   android:layout_gravity="right|bottom"/>
-        <ImageView android:layout_height="wrap_content"
-                   android:layout_width="wrap_content"
-                   android:id="@+id/social_button"
-                   android:layout_gravity="center_horizontal|bottom"/>
+
+        <LinearLayout
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal">
+
+            <FrameLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:id="@+id/left_btn"/>
+
+            <FrameLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:id="@+id/right_btn"/>
+
+        </LinearLayout>
+
+        <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/social_button"
+                android:layout_gravity="center_horizontal|bottom"/>
     </FrameLayout>
 
     <TextView

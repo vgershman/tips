@@ -17,50 +17,62 @@
       <GlobalState>
         <option name="device" value="2.7in QVGA" />
         <option name="dockMode" value="" />
-        <option name="localeLanguage" value="ru" />
         <option name="nightMode" value="notnight" />
         <option name="targetHashString" value="android-17" />
-        <option name="theme" value="Theme" />
-        <option name="visible" value="false" />
+        <option name="theme" value="Theme.Black.NoTitleBar" />
       </GlobalState>
     </option>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/dto/Category.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/dto/Tip.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/adapter/TipsPagerAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/category_activity.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/category_menu.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/main_menu_activity.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/roboguice_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/tip_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/delegate/NavigationDelegate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/opencsv_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values-ru/strings.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/tipsImages.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-ru/cooking_preview" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-ru/home_preview" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-ru/lifestyle_preview" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-ru/work_preview" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable/cooking_preview" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable/home_preview" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable/lifestyle_preview" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable/work_preview" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/dto/Tip.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/dto/Tip.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/adapter/TipsPagerAdapter.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/adapter/TipsPagerAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/category_activity.xml" afterPath="$PROJECT_DIR$/res/layout/category_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/category_menu.xml" afterPath="$PROJECT_DIR$/res/menu/category_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main_menu_activity.xml" afterPath="$PROJECT_DIR$/res/layout/main_menu_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/tip_item.xml" afterPath="$PROJECT_DIR$/res/layout/tip_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tips.iml" afterPath="$PROJECT_DIR$/tips.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tips.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368556502284" ignored="false" />
+    <file path="/Dummy.txt" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368727517130" ignored="false" />
     <file path="/MainMenuActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368556213086" ignored="false" />
-    <file path="/main_menu_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368476696457" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368561252276" ignored="false" />
+    <file path="/main_menu_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368732722885" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368640670028" ignored="false" />
     <file path="/Category.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368556201984" ignored="false" />
-    <file path="/CategoryActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368564454920" ignored="false" />
-    <file path="/category_menu.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368478240363" ignored="false" />
-    <file path="/fragment.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368478457949" ignored="false" />
+    <file path="/CategoryActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368735417512" ignored="false" />
+    <file path="/category_menu.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368649747319" ignored="false" />
+    <file path="/fragment.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368650542067" ignored="false" />
     <file path="/category_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368562483478" ignored="false" />
-    <file path="/tip_item.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368558016653" ignored="false" />
+    <file path="/tip_item.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368733165125" ignored="false" />
     <file path="/TipPagerAdapter.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368558177378" ignored="false" />
-    <file path="/Tip.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368563298469" ignored="false" />
-    <file path="/DailyTipsApp.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368564544374" ignored="false" />
-    <file path="/TipsPagerAdapter.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368563644166" ignored="false" />
-    <file path="/TipFragment.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368563670263" ignored="false" />
+    <file path="/Tip.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368729860846" ignored="false" />
+    <file path="/DailyTipsApp.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368735149628" ignored="false" />
+    <file path="/TipsPagerAdapter.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368734323303" ignored="false" />
+    <file path="/TipFragment.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368734146279" ignored="false" />
+    <file path="/strings.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368732140200" ignored="false" />
+    <file path="/NavigationDelegate.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368733961933" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +87,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -112,6 +123,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -120,55 +133,7 @@
     <favorites_list name="tips" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CategoryActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="41" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DailyTipsApp.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="4" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TipsPagerAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/adapter/TipsPagerAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="35" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TipFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="39" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tip.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/dto/Tip.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="10" selection-start="164" selection-end="164" vertical-scroll-proportion="0.15971394">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -186,26 +151,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/main_menu_activity.xml" />
-        <option value="$PROJECT_DIR$/res/menu/category_menu.xml" />
-        <option value="$PROJECT_DIR$/src/com/expelabs/tips/dto/Category.java" />
-        <option value="$PROJECT_DIR$/src/com/expelabs/tips/activity/MainMenuActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/tip_item.xml" />
         <option value="$PROJECT_DIR$/src/com/expelabs/tips/adapter/TipPagerAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/nicholasworkshop/ui/infinitepageview/InfinitePageView.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/layout/category_activity.xml" />
+        <option value="$PROJECT_DIR$/res/menu/category_menu.xml" />
+        <option value="$PROJECT_DIR$/res/raw/cooking.csv" />
         <option value="$PROJECT_DIR$/src/com/expelabs/tips/dto/Tip.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/values-ru/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/main_menu_activity.xml" />
+        <option value="$PROJECT_DIR$/res/layout/tip_item.xml" />
+        <option value="$PROJECT_DIR$/src/com/expelabs/tips/delegate/NavigationDelegate.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/tips/adapter/TipsPagerAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" />
+        <option value="$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="22" />
+    <option name="x" value="13" />
+    <option name="y" value="25" />
     <option name="width" value="1900" />
     <option name="height" value="987" />
   </component>
@@ -235,6 +202,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -290,7 +258,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="delegate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -305,6 +273,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tips" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,13 +321,17 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tipsImages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
@@ -354,6 +344,8 @@
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="DEBUGGABLE_DEVICE" value="192.168.1.202:5555" />
+    <property name="DEBUGGABLE_PROCESS" value="com.expelabs.tips" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
@@ -518,32 +510,52 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="22" width="1900" height="987" extended-state="0" />
-    <editor active="true" />
+    <frame x="13" y="25" width="1900" height="987" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5374856" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3656286" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3656286" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4013841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973032" sideWeight="0.67012686" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24703345" sideWeight="0.67012686" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955772" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955772" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -613,124 +625,68 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/dto/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="34" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main_menu_activity.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="46" selection-start="2570" selection-end="2570" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/depend/actionbarsherlock/res/values-v14/abs__styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.017878426">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/category_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="33" selection-start="176" selection-end="176" vertical-scroll-proportion="0.073529415">
+        <state line="6" column="77" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/tip_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/dto/Tip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="15" selection-start="1746" selection-end="1746" vertical-scroll-proportion="-23.333334">
+        <state line="17" column="37" selection-start="380" selection-end="380" vertical-scroll-proportion="0.3125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/dto/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="42" selection-start="256" selection-end="256" vertical-scroll-proportion="0.17878427">
+        <state line="9" column="12" selection-start="203" selection-end="203" vertical-scroll-proportion="0.16090584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/depend/actionbarsherlock/src/com/actionbarsherlock/internal/ActionBarSherlockNative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="37" selection-start="5313" selection-end="5313" vertical-scroll-proportion="0.029296875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-ru/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="49" selection-start="248" selection-end="248" vertical-scroll-proportion="0.08939213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="56" selection-start="103" selection-end="302" vertical-scroll-proportion="0.10727056">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/raw/cooking.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main_menu_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="50" selection-start="4541" selection-end="4541" vertical-scroll-proportion="1.0722433">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="46" selection-start="2570" selection-end="2570" vertical-scroll-proportion="0.57512313">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/android-sdk/r21.1/sources/android-17/java/io/Serializable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="17" selection-start="4899" selection-end="4899" vertical-scroll-proportion="1.4839094">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/MainMenuActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="29" selection-start="2435" selection-end="2435" vertical-scroll-proportion="0.83909416">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1237#1405#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1443#1608#0" expanded="true" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1651#1821#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1859#2024#0" expanded="true" />
-            <element signature="e#2013#2014#0" expanded="true" />
-            <element signature="e#2064#2231#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="48" selection-start="238" selection-end="238" vertical-scroll-proportion="0.08939213">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/category_activity.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="385" selection-end="385" vertical-scroll-proportion="0.18472907">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="41" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="4" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/adapter/TipsPagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="35" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+        <state line="37" column="65" selection-start="1021" selection-end="1034" vertical-scroll-proportion="0.83905965">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -739,14 +695,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="39" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
+        <state line="59" column="0" selection-start="2056" selection-end="2056" vertical-scroll-proportion="0.965435">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/adapter/TipsPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.42908224">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/dto/Tip.java">
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/delegate/NavigationDelegate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="10" selection-start="164" selection-end="164" vertical-scroll-proportion="0.15971394">
+        <state line="12" column="9" selection-start="264" selection-end="264" vertical-scroll-proportion="0.21454112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/category_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="5" selection-start="260" selection-end="260" vertical-scroll-proportion="0.11083744">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/tip_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="8" selection-start="651" selection-end="651" vertical-scroll-proportion="0.16871922">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="69" selection-start="3388" selection-end="3388" vertical-scroll-proportion="1.6256781">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="69" selection-start="344" selection-end="344" vertical-scroll-proportion="0.37974682">
           <folding />
         </state>
       </provider>

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">tips</string>
+    <string name="app_name">Daily Tips</string>
+    <string name="category_cooking">Cooking</string>
+    <string name="category_home">Home</string>
+    <string name="category_work">Work</string>
+    <string name="category_lifestyle">Lifestyle</string>
 </resources>

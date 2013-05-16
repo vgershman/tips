@@ -13,8 +13,17 @@ public class Tip implements Serializable{
 
     private String text;
     private String textItalic;
-    private String categoryName;
     private int id;
+
+    public String getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
+
+    private String categoryName;
 
     public String getText() {
         return text;
@@ -30,14 +39,6 @@ public class Tip implements Serializable{
 
     public void setTextItalic(String textItalic) {
         this.textItalic = textItalic;
-    }
-
-    public String getCategoryName() {
-        return categoryName;
-    }
-
-    public void setCategoryName(String categoryName) {
-        this.categoryName = categoryName;
     }
 
     public int getId() {

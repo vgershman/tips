@@ -10,9 +10,13 @@ import android.app.Application;
  * To change this template use File | Settings | File Templates.
  */
 
-public class DailyTipsApp extends Application{
+public class DailyTipsApp extends Application {
 
-    public static final String IMAGES_PATH = "/dailyTipsImages/";
+    public static final String PREFERENCES_NAME = "tips_preferences";
 
-
+    @Override
+    public void onCreate() {
+        super.onCreate();
+    }
 }
+

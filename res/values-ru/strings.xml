@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category_cooking">Готовка</string>
+    <string name="category_home">Дом</string>
+    <string name="category_work">Работа</string>
+    <string name="category_lifestyle">Стиль жизни</string>
+</resources>
