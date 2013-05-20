@@ -1,5 +1,6 @@
 package com.expelabs.tips.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -7,6 +8,7 @@ import au.com.bytecode.opencsv.CSVReader;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
 import com.expelabs.tips.R;
 import com.expelabs.tips.adapter.TipsPagerAdapter;
 import com.expelabs.tips.app.DailyTipsApp;
@@ -18,7 +20,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created with IntelliJ IDEA.
@@ -32,13 +36,12 @@ public class CategoryActivity extends SherlockFragmentActivity {
     private Category currentCategory;
     private static final String CURRENT_ITEM = "cur_item";
     private ViewPager tipPager;
-    private NavigationDelegate navigationDelegate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.category_activity);
-        currentCategory = (Category)getIntent().getSerializableExtra("category");
+        currentCategory = (Category) getIntent().getSerializableExtra("category");
         initActionBar();
         initControls();
     }
@@ -52,45 +55,34 @@ public class CategoryActivity extends SherlockFragmentActivity {
 
     private void initControls() {
         tipPager = (ViewPager) findViewById(R.id.tip_pager);
-        final List<Tip>tipList = loadTips(currentCategory);
-        navigationDelegate = new NavigationDelegate() {
-            @Override
-            public void onLeft() {
-                if(tipPager.getCurrentItem() > 0){
-                    tipPager.setCurrentItem(tipPager.getCurrentItem() - 1, true);
-                }else{
-                    tipPager.setCurrentItem(tipList.size() - 1, true);
-                }
-            }
-
-            @Override
-            public void onRight() {
-                if (tipPager.getCurrentItem() < tipList.size() - 1) {
-                    tipPager.setCurrentItem(tipPager.getCurrentItem() + 1, true);
-                }else{
-                    tipPager.setCurrentItem(0,true);
-                }
-            }
-        };
-        final TipsPagerAdapter tipsPagerAdapter = new TipsPagerAdapter(getSupportFragmentManager(), tipList, navigationDelegate);
+        List<Tip> tipList = prepareTips(currentCategory);
+        TipsPagerAdapter tipsPagerAdapter = new TipsPagerAdapter(getSupportFragmentManager(), tipList, tipPager);
         tipPager.setAdapter(tipsPagerAdapter);
 
     }
 
-    private List<Tip> loadTips(Category category) {
+    private List<Tip> prepareTips(Category category) {
         List<Tip> results = new ArrayList<Tip>();
-        int tipsFile = 0;
         switch (category) {
             case COOKING:
-                tipsFile = R.raw.cooking;
+                results = loadTips(category,R.raw.cooking);
                 break;
             case HOME:
-                tipsFile = R.raw.home;
+                results = loadTips(category,R.raw.home);
                 break;
             case RANDOM:
-                tipsFile = R.raw.home;
+                results.addAll(loadTips(Category.COOKING,R.raw.cooking));
+                results.addAll(loadTips(Category.HOME, R.raw.home));
+                Collections.shuffle(results,new Random());
+                break;
         }
-        CSVReader reader = new CSVReader(new BufferedReader(new InputStreamReader(getResources().openRawResource(tipsFile))));
+        return results;
+
+    }
+
+    public List<Tip>loadTips(Category category,int tipsFileResourceId){
+        List<Tip>results = new ArrayList<Tip>();
+        CSVReader reader = new CSVReader(new BufferedReader(new InputStreamReader(getResources().openRawResource(tipsFileResourceId))));
         String[] nextLine;
         int i = 0;
         try {
@@ -113,17 +105,41 @@ public class CategoryActivity extends SherlockFragmentActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).edit().putInt(CURRENT_ITEM + currentCategory.name(),tipPager.getCurrentItem()).commit();
+        getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt(CURRENT_ITEM + currentCategory.name(), tipPager.getCurrentItem()).commit();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        int currentItem  = getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).getInt(CURRENT_ITEM + currentCategory.name(),0);
-        tipPager.setCurrentItem(currentItem,false);
+        int currentItem = getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).getInt(CURRENT_ITEM + currentCategory.name(), TipsPagerAdapter.FAKE_COUNT/2);
+        tipPager.setCurrentItem(currentItem, false);
     }
 
     private void initActionBar() {
-        //getSupportActionBar().setHomeButtonEnabled(true);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        int titleId = 0;
+        switch (currentCategory){
+            case COOKING: titleId = R.string.category_cooking;break;
+            case HOME: titleId = R.string.category_home;break;
+            case WORK: titleId = R.string.category_work;break;
+            case LIFESTYLE: titleId = R.string.category_lifestyle;break;
+            case RANDOM: titleId = R.string.category_random;break;
+        }
+        getActionBar().setTitle(titleId);
+
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+            case R.id.action_settings:
+                startActivity(new Intent(CategoryActivity.this,AdditionalSettingsActivity.class));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
 }

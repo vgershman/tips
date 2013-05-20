@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res/com.expelabs.tips"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              >
 
     <FrameLayout
             android:layout_height="wrap_content"
@@ -14,7 +16,9 @@
                 android:layout_width="fill_parent"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:id="@+id/tip_image"/>
+                android:id="@+id/tip_image"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
 
         <LinearLayout
                 android:layout_height="fill_parent"
@@ -44,15 +48,25 @@
                 android:layout_gravity="center_horizontal|bottom"/>
     </FrameLayout>
 
-    <TextView
+    <com.expelabs.tips.view.CustomFontTextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            custom:customFont="fonts/Roboto-Regular.ttf"
             android:id="@+id/tip_text"/>
 
-    <TextView
+    <com.expelabs.tips.view.CustomFontTextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:textSize="25sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="20dp"
+            custom:customFont="fonts/Roboto-ThinItalic.ttf"
             android:id="@+id/tip_text_ital"/>
 </LinearLayout>

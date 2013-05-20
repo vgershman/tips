@@ -2,13 +2,12 @@
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-    android:id="@+id/action_refresh"
-    android:orderInCategory="100"
-    android:showAsAction="always"
-    android:icon="@drawable/abs__ab_share_pack_holo_light"
-    android:title="Refresh"/>
+            android:id="@+id/menu_item_share"
+            android:icon="@drawable/ic_action_share"
+            android:showAsAction="always"/>
     <item
             android:id="@+id/action_settings"
-            android:title="Settings">
-    </item>
+            android:title="Settings"
+            android:icon="@drawable/ic_action_settings"
+            android:showAsAction="always"/>
 </menu>

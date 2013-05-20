@@ -5,4 +5,6 @@
     <string name="category_home">Home</string>
     <string name="category_work">Work</string>
     <string name="category_lifestyle">Lifestyle</string>
+    <string name="category_random">Random</string>
+    <string name="additional_settings_title">Additional Settings</string>
 </resources>
