@@ -1,7 +1,11 @@
 package com.expelabs.tips.activity;
 
 import android.content.Intent;
+import android.content.pm.ResolveInfo;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import au.com.bytecode.opencsv.CSVReader;
@@ -10,6 +14,7 @@ import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.widget.ShareActionProvider;
+import com.expelabs.tips.ImageUtils;
 import com.expelabs.tips.R;
 import com.expelabs.tips.adapter.TipsPagerAdapter;
 import com.expelabs.tips.app.DailyTipsApp;
@@ -18,6 +23,7 @@ import com.expelabs.tips.dto.Category;
 import com.expelabs.tips.dto.Tip;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -59,38 +65,36 @@ public class CategoryActivity extends SherlockFragmentActivity {
         List<Tip> tipList = prepareTips(currentCategory);
         TipsPagerAdapter tipsPagerAdapter = new TipsPagerAdapter(getSupportFragmentManager(), tipList, tipPager);
         tipPager.setAdapter(tipsPagerAdapter);
-
     }
 
     private List<Tip> prepareTips(Category category) {
         List<Tip> results = new ArrayList<Tip>();
         switch (category) {
             case COOKING:
-                results = loadTips(category,R.raw.cooking);
+                results = loadTips(category, R.raw.cooking);
                 break;
             case HOME:
-                results = loadTips(category,R.raw.home);
+                results = loadTips(category, R.raw.home);
                 break;
             case LIFESTYLE:
-                results = loadTips(category,R.raw.work);
+                results = loadTips(category, R.raw.lifestyle);
                 break;
             case WORK:
-                results = loadTips(category,R.raw.work);
+                results = loadTips(category, R.raw.work);
                 break;
             case RANDOM:
-                results.addAll(loadTips(Category.COOKING,R.raw.cooking));
+                results.addAll(loadTips(Category.COOKING, R.raw.cooking));
                 results.addAll(loadTips(Category.HOME, R.raw.home));
-                results.addAll(loadTips(Category.LIFESTYLE, R.raw.work));
+                results.addAll(loadTips(Category.LIFESTYLE, R.raw.lifestyle));
                 results.addAll(loadTips(Category.WORK, R.raw.work));
-                Collections.shuffle(results,new Random());
+                Collections.shuffle(results, new Random());
                 break;
         }
         return results;
-
     }
 
-    public List<Tip>loadTips(Category category,int tipsFileResourceId){
-        List<Tip>results = new ArrayList<Tip>();
+    public List<Tip> loadTips(Category category, int tipsFileResourceId) {
+        List<Tip> results = new ArrayList<Tip>();
         CSVReader reader = new CSVReader(new BufferedReader(new InputStreamReader(getResources().openRawResource(tipsFileResourceId))));
         String[] nextLine;
         int i = 0;
@@ -120,23 +124,33 @@ public class CategoryActivity extends SherlockFragmentActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        int currentItem = getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).getInt(CURRENT_ITEM + currentCategory.name(), TipsPagerAdapter.FAKE_COUNT/2);
+        int currentItem = getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).getInt(CURRENT_ITEM + currentCategory.name(), TipsPagerAdapter.FAKE_COUNT / 2);
         tipPager.setCurrentItem(currentItem, false);
     }
 
     private void initActionBar() {
         getActionBar().setDisplayHomeAsUpEnabled(true);
         int titleId = 0;
-        switch (currentCategory){
-            case COOKING: titleId = R.string.category_cooking;break;
-            case HOME: titleId = R.string.category_home;break;
-            case WORK: titleId = R.string.category_work;break;
-            case LIFESTYLE: titleId = R.string.category_lifestyle;break;
-            case RANDOM: titleId = R.string.category_random;break;
+        switch (currentCategory) {
+            case COOKING:
+                titleId = R.string.category_cooking;
+                break;
+            case HOME:
+                titleId = R.string.category_home;
+                break;
+            case WORK:
+                titleId = R.string.category_work;
+                break;
+            case LIFESTYLE:
+                titleId = R.string.category_lifestyle;
+                break;
+            case RANDOM:
+                titleId = R.string.category_random;
+                break;
         }
         getActionBar().setTitle(titleId);
-
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -144,16 +158,41 @@ public class CategoryActivity extends SherlockFragmentActivity {
                 finish();
                 return true;
             case R.id.action_settings:
-                startActivity(new Intent(CategoryActivity.this,AdditionalSettingsActivity.class));
+                startActivity(new Intent(CategoryActivity.this, AdditionalSettingsActivity.class));
                 return true;
             case R.id.menu_item_share:
-                final Intent intent = new Intent(Intent.ACTION_SEND);
-                intent.setType("text/plain");
-                intent.putExtra(Intent.EXTRA_TEXT, "test");
-                startActivity(Intent.createChooser(intent, getString(R.string.app_name)));
+                share("twi","");
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+    private void share(String nameApp, String imagePath) {
+        List<Intent> targetedShareIntents = new ArrayList<Intent>();
+        Intent share = new Intent(android.content.Intent.ACTION_SEND);
+        share.setType("image/jpeg");
+        List<ResolveInfo> resInfo = getPackageManager().queryIntentActivities(share, 0);
+        if (!resInfo.isEmpty()){
+            for (ResolveInfo info : resInfo) {
+                Intent targetedShare = new Intent(android.content.Intent.ACTION_SEND);
+                targetedShare.setType("image/jpeg"); // put here your mime type
+
+               // if (info.activityInfo.packageName.toLowerCase().contains(nameApp) ||
+                 //       info.activityInfo.name.toLowerCase().contains(nameApp)) {
+                    targetedShare.putExtra(Intent.EXTRA_TEXT, "My body of post/email");
+                try {
+                    targetedShare.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(ImageUtils.writeImageToFile(BitmapFactory.decodeStream(getAssets().open("tipsImages/cooking/1.jpg")),"temp"))));
+                } catch (IOException e) {
+                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                }
+                targetedShare.setPackage(info.activityInfo.packageName);
+                    targetedShareIntents.add(targetedShare);
+
+            }
+
+            Intent chooserIntent = Intent.createChooser(targetedShareIntents.remove(0), "Select app to share");
+            chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, targetedShareIntents.toArray(new Parcelable[]{}));
+            startActivity(chooserIntent);
         }
     }
 
