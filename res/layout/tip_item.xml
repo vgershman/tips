@@ -1,72 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:custom="http://schemas.android.com/apk/res/com.expelabs.tips"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              >
-
-    <FrameLayout
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent">
-
-        <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="fill_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:id="@+id/tip_image"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"/>
-
-        <LinearLayout
-                android:layout_height="fill_parent"
-                android:layout_width="fill_parent"
-                android:orientation="horizontal">
-
-            <FrameLayout
-                    android:layout_height="fill_parent"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:background="#0000"
-                    android:id="@+id/left_btn"/>
-
-            <FrameLayout
-                    android:layout_height="fill_parent"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:background="#0000"
-                    android:id="@+id/right_btn"/>
-
-        </LinearLayout>
-
-        <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:id="@+id/social_button"
-                android:layout_gravity="center_horizontal|bottom"/>
-    </FrameLayout>
-
-    <com.expelabs.tips.view.CustomFontTextView
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res/com.expelabs.tips"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="15dp"
-            android:textColor="@android:color/black"
-            android:textSize="25sp"
-            custom:customFont="fonts/Roboto-Regular.ttf"
-            android:id="@+id/tip_text"/>
+            >
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="5dp"
+            >
 
-    <com.expelabs.tips.view.CustomFontTextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="50dp"
-            android:textColor="@android:color/black"
-            android:layout_marginLeft="20dp"
-            custom:customFont="fonts/Roboto-ThinItalic.ttf"
-            android:id="@+id/tip_text_ital"/>
-</LinearLayout>
+        <FrameLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+
+            <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/tip_image"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"/>
+
+            <LinearLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal">
+
+                <FrameLayout
+                        android:layout_height="fill_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:id="@+id/left_btn"/>
+
+                <FrameLayout
+                        android:layout_height="fill_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:id="@+id/right_btn"/>
+
+            </LinearLayout>
+
+            <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/social_button"
+                    android:layout_gravity="center_horizontal|bottom"/>
+        </FrameLayout>
+
+        <com.expelabs.tips.view.CustomFontTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                custom:customFont="fonts/Roboto-Regular.ttf"
+                android:id="@+id/tip_text"/>
+
+        <com.expelabs.tips.view.CustomFontTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="20dp"
+                custom:customFont="fonts/Roboto-ThinItalic.ttf"
+                android:id="@+id/tip_text_ital"
+                />
+    </LinearLayout>
+</ScrollView>

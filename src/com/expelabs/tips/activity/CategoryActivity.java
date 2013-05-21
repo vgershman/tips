@@ -9,6 +9,7 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
+import com.actionbarsherlock.widget.ShareActionProvider;
 import com.expelabs.tips.R;
 import com.expelabs.tips.adapter.TipsPagerAdapter;
 import com.expelabs.tips.app.DailyTipsApp;
@@ -70,9 +71,17 @@ public class CategoryActivity extends SherlockFragmentActivity {
             case HOME:
                 results = loadTips(category,R.raw.home);
                 break;
+            case LIFESTYLE:
+                results = loadTips(category,R.raw.work);
+                break;
+            case WORK:
+                results = loadTips(category,R.raw.work);
+                break;
             case RANDOM:
                 results.addAll(loadTips(Category.COOKING,R.raw.cooking));
                 results.addAll(loadTips(Category.HOME, R.raw.home));
+                results.addAll(loadTips(Category.LIFESTYLE, R.raw.work));
+                results.addAll(loadTips(Category.WORK, R.raw.work));
                 Collections.shuffle(results,new Random());
                 break;
         }
@@ -136,6 +145,12 @@ public class CategoryActivity extends SherlockFragmentActivity {
                 return true;
             case R.id.action_settings:
                 startActivity(new Intent(CategoryActivity.this,AdditionalSettingsActivity.class));
+                return true;
+            case R.id.menu_item_share:
+                final Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_TEXT, "test");
+                startActivity(Intent.createChooser(intent, getString(R.string.app_name)));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
