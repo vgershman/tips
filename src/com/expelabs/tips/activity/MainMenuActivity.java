@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import com.expelabs.tips.R;
+import com.expelabs.tips.app.DailyTipsApp;
 import com.expelabs.tips.dto.Category;
 
 /**
@@ -80,4 +81,9 @@ public class MainMenuActivity extends Activity {
         overridePendingTransition(R.anim.appear_from_right,R.anim.disappear_to_left);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        DailyTipsApp.setContext(this);
+    }
 }

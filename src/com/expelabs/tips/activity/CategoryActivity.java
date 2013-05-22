@@ -58,6 +58,22 @@ public class CategoryActivity extends SherlockFragmentActivity {
 
     private void initControls() {
         tipPager = (ViewPager) findViewById(R.id.tip_pager);
+        tipPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int i, float v, int i2) {
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
+
+            @Override
+            public void onPageSelected(int i) {
+                DailyTipsApp.incrementScrollCounter();
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int i) {
+                //To change body of implemented methods use File | Settings | File Templates.
+            }
+        });
 
     }
 
@@ -126,6 +142,7 @@ public class CategoryActivity extends SherlockFragmentActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        DailyTipsApp.setContext(this);
         List<Tip> tipList = prepareTips(currentCategory);
         TipsPagerAdapter tipsPagerAdapter = new TipsPagerAdapter(getSupportFragmentManager(), tipList, tipPager);
         tipPager.setAdapter(tipsPagerAdapter);
@@ -164,7 +181,7 @@ public class CategoryActivity extends SherlockFragmentActivity {
                 return true;
             case R.id.action_settings:
                 startActivity(new Intent(CategoryActivity.this, AdditionalSettingsActivity.class));
-                overridePendingTransition(R.anim.appear_from_right,R.anim.disappear_to_left);
+                overridePendingTransition(R.anim.appear_from_right, R.anim.disappear_to_left);
                 return true;
             case R.id.menu_item_share:
                 share("twi","");

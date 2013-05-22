@@ -31,17 +31,14 @@ public class TipsPagerAdapter extends FragmentStatePagerAdapter {
         navigationDelegate = new NavigationDelegate() {
             @Override
             public void onLeft() {
-                DailyTipsApp.incrementScrollCounter();
                 if (viewPager.getCurrentItem() > 0) {
                     viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);
-
                 }
             }
 
             @Override
             public void onRight() {
-                DailyTipsApp.incrementScrollCounter();
-                if(viewPager.getCurrentItem() < FAKE_COUNT){
+                if (viewPager.getCurrentItem() < FAKE_COUNT) {
                     viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
                 }
             }

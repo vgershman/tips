@@ -155,6 +155,12 @@ public class AdditionalSettingsActivity extends SherlockActivity {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        DailyTipsApp.setContext(this);
+    }
+
+    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == BillingUtils.RC_BUY) {
             DailyTipsApp.getBillingUtils().handleActivityResult(requestCode, resultCode, data);

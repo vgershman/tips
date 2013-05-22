@@ -53,25 +53,30 @@ public class DailyTipsApp extends Application {
         return result;
     }
 
+    public static void setContext(Context appContext) {
+        DailyTipsApp.appContext = appContext;
+    }
+
     @Override
     public void onTerminate() {
+
         super.onTerminate();
         billingUtils.dispose();
     }
 
     public static void incrementScrollCounter(){
         scrollngCounter++;
-        if(scrollngCounter %10 == 0){
-            if(appContext.getSharedPreferences(PREFERENCES_NAME,MODE_PRIVATE).getBoolean("bought", false)){
-                AlertDialog.Builder builder = new AlertDialog.Builder(appContext.getApplicationContext());
+        if(scrollngCounter % 10 == 0){
+            if(!appContext.getSharedPreferences(PREFERENCES_NAME,MODE_PRIVATE).getBoolean("bought", false)){
+                AlertDialog.Builder builder = new AlertDialog.Builder(appContext);
                 builder.setTitle(appContext.getString(R.string.more_tips));
                 builder.setMessage("Test");
                 builder.create().show();
             }
         }
-        if(scrollngCounter %15 ==0){
-            if(appContext.getSharedPreferences(PREFERENCES_NAME,MODE_PRIVATE).getBoolean("rate", false)){
-                AlertDialog.Builder builder = new AlertDialog.Builder(appContext.getApplicationContext());
+        if(scrollngCounter % 15 ==0){
+            if(!appContext.getSharedPreferences(PREFERENCES_NAME,MODE_PRIVATE).getBoolean("rate", false)){
+                AlertDialog.Builder builder = new AlertDialog.Builder(appContext);
                 builder.setTitle("Rate this app");
                 builder.setMessage("Test");
                 builder.create().show();
