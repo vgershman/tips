@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
+import com.expelabs.tips.app.DailyTipsApp;
 import com.expelabs.tips.delegate.NavigationDelegate;
 import com.expelabs.tips.dto.Tip;
 import com.expelabs.tips.fragment.TipFragment;
@@ -30,13 +31,16 @@ public class TipsPagerAdapter extends FragmentStatePagerAdapter {
         navigationDelegate = new NavigationDelegate() {
             @Override
             public void onLeft() {
+                DailyTipsApp.incrementScrollCounter();
                 if (viewPager.getCurrentItem() > 0) {
                     viewPager.setCurrentItem(viewPager.getCurrentItem() - 1);
+
                 }
             }
 
             @Override
             public void onRight() {
+                DailyTipsApp.incrementScrollCounter();
                 if(viewPager.getCurrentItem() < FAKE_COUNT){
                     viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
                 }

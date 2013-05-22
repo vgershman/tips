@@ -77,5 +77,7 @@ public class MainMenuActivity extends Activity {
         Intent intent = new Intent(this, CategoryActivity.class);
         intent.putExtra("category", category);
         startActivity(intent);
+        overridePendingTransition(R.anim.appear_from_right,R.anim.disappear_to_left);
     }
+
 }

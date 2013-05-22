@@ -7,29 +7,23 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v4.view.ViewPager;
-import android.view.View;
 import au.com.bytecode.opencsv.CSVReader;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-import com.actionbarsherlock.widget.ShareActionProvider;
-import com.expelabs.tips.ImageUtils;
 import com.expelabs.tips.R;
 import com.expelabs.tips.adapter.TipsPagerAdapter;
-import com.expelabs.tips.app.DailyTipsApp;
-import com.expelabs.tips.delegate.NavigationDelegate;
 import com.expelabs.tips.dto.Category;
 import com.expelabs.tips.dto.Tip;
+import com.expelabs.tips.util.ImageUtils;
+import com.expelabs.tips.app.*;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -53,6 +47,8 @@ public class CategoryActivity extends SherlockFragmentActivity {
         initControls();
     }
 
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getSupportMenuInflater();
@@ -62,9 +58,7 @@ public class CategoryActivity extends SherlockFragmentActivity {
 
     private void initControls() {
         tipPager = (ViewPager) findViewById(R.id.tip_pager);
-        List<Tip> tipList = prepareTips(currentCategory);
-        TipsPagerAdapter tipsPagerAdapter = new TipsPagerAdapter(getSupportFragmentManager(), tipList, tipPager);
-        tipPager.setAdapter(tipsPagerAdapter);
+
     }
 
     private List<Tip> prepareTips(Category category) {
@@ -94,6 +88,11 @@ public class CategoryActivity extends SherlockFragmentActivity {
     }
 
     public List<Tip> loadTips(Category category, int tipsFileResourceId) {
+        Map<String, Boolean> purchases = DailyTipsApp.getPurchases();
+        int limit = 25;
+        if(purchases.get(DailyTipsApp.SKU_TOTAL)||purchases.get(getPackageName()+"."+category.name().toLowerCase())){
+            limit = 125;
+        }
         List<Tip> results = new ArrayList<Tip>();
         CSVReader reader = new CSVReader(new BufferedReader(new InputStreamReader(getResources().openRawResource(tipsFileResourceId))));
         String[] nextLine;
@@ -101,6 +100,9 @@ public class CategoryActivity extends SherlockFragmentActivity {
         try {
             while ((nextLine = reader.readNext()) != null) {
                 i++;
+                if( i > limit){
+                    break;
+                }
                 Tip newTip = new Tip();
                 newTip.setId(i);
                 newTip.setCategoryName(category.name().toLowerCase());
@@ -124,6 +126,9 @@ public class CategoryActivity extends SherlockFragmentActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        List<Tip> tipList = prepareTips(currentCategory);
+        TipsPagerAdapter tipsPagerAdapter = new TipsPagerAdapter(getSupportFragmentManager(), tipList, tipPager);
+        tipPager.setAdapter(tipsPagerAdapter);
         int currentItem = getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).getInt(CURRENT_ITEM + currentCategory.name(), TipsPagerAdapter.FAKE_COUNT / 2);
         tipPager.setCurrentItem(currentItem, false);
     }
@@ -155,10 +160,11 @@ public class CategoryActivity extends SherlockFragmentActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                finish();
+                onBackPressed();
                 return true;
             case R.id.action_settings:
                 startActivity(new Intent(CategoryActivity.this, AdditionalSettingsActivity.class));
+                overridePendingTransition(R.anim.appear_from_right,R.anim.disappear_to_left);
                 return true;
             case R.id.menu_item_share:
                 share("twi","");
@@ -196,4 +202,10 @@ public class CategoryActivity extends SherlockFragmentActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        overridePendingTransition(R.anim.appear_from_left,R.anim.disappear_to_right);
+    }
 }

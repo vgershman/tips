@@ -5,4 +5,6 @@
     <string name="category_work">Работа</string>
     <string name="category_lifestyle">Стиль жизни</string>
     <string name="additional_settings_title">Настройки</string>
+    <string name="choose_share">Выберите способ поделеиться</string>
+    <string name="more_tips">Больше советов?</string>
 </resources>
