@@ -3,7 +3,7 @@
             xmlns:custom="http://schemas.android.com/apk/res/com.expelabs.tips"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            >
+        >
     <LinearLayout
             android:orientation="vertical"
             android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
             <ImageView
                     android:layout_height="wrap_content"
                     android:layout_width="fill_parent"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="7dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:id="@+id/tip_image"
@@ -47,22 +47,20 @@
             </LinearLayout>
 
             <ImageView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
                     android:id="@+id/social_button"
-                    android:layout_gravity="center_horizontal|bottom"/>
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="right|bottom"/>
         </FrameLayout>
-        <LinearLayout android:layout_height="0dp"
-                      android:layout_width="fill_parent"
-                      android:orientation="vertical"
-                      android:layout_gravity="center_vertical"
-                      android:gravity="center_vertical"
-                      android:layout_weight="1">
+
         <com.expelabs.tips.view.CustomFontTextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
                 android:textColor="@android:color/black"
                 android:textSize="25sp"
                 custom:customFont="fonts/Roboto-Regular.ttf"
@@ -79,6 +77,6 @@
                 custom:customFont="fonts/Roboto-ThinItalic.ttf"
                 android:id="@+id/tip_text_ital"
                 />
-        </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

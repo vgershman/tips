@@ -17,6 +17,7 @@ import com.billing.Purchase;
 import com.expelabs.tips.R;
 import com.expelabs.tips.app.*;
 import com.expelabs.tips.delegate.PurchaseDelegate;
+import com.expelabs.tips.dto.Share;
 import com.expelabs.tips.util.BillingUtils;
 
 import java.util.Map;
@@ -41,8 +42,36 @@ public class AdditionalSettingsActivity extends SherlockActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
         initActionBar();
-        initComponents();
+        initBuyComponents();
+        initShareComponents();
         bindUIbyPurchasese();
+    }
+
+    private void initShareComponents() {
+        findViewById(R.id.share_facebook).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).edit().putInt("share",Share.FACEBOOK).commit();
+            }
+        });
+        findViewById(R.id.share_vk).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).edit().putInt("share",Share.VK).commit();
+            }
+        });
+        findViewById(R.id.share_twitter).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).edit().putInt("share",Share.TWITTER).commit();
+            }
+        });
+        findViewById(R.id.share_email).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).edit().putInt("share",Share.EMAIL).commit();
+            }
+        });
     }
 
     private void initActionBar() {
@@ -61,7 +90,7 @@ public class AdditionalSettingsActivity extends SherlockActivity {
         }
     }
 
-    private void initComponents() {
+    private void initBuyComponents() {
         buyTotal = (ImageView) findViewById(R.id.ia_total);
         buyTotal.setOnClickListener(new View.OnClickListener() {
             @Override
