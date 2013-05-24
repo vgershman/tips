@@ -31,6 +31,8 @@ public class DailyTipsApp extends Application {
 
     private static BillingUtils billingUtils;
     private static Context appContext;
+    public static String VK_APP_ID = "";
+    public static String VK_SCOPE = "wall";
 
     @Override
     public void onCreate() {

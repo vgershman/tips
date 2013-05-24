@@ -13,6 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+import com.expelabs.social.vk.RequestCallback;
+import com.expelabs.social.vk.VkAccess;
 import com.expelabs.tips.R;
 import com.expelabs.tips.app.DailyTipsApp;
 import com.expelabs.tips.delegate.NavigationDelegate;
@@ -139,7 +142,7 @@ public class TipFragment extends Fragment {
         if (!resInfo.isEmpty()) {
             for (ResolveInfo info : resInfo) {
                 Intent targetedShare = new Intent(android.content.Intent.ACTION_SEND);
-                targetedShare.setType("image/jpeg"); // put here your mime type
+                targetedShare.setType("image/jpeg");
                 if (info.activityInfo.packageName.toLowerCase().contains("twi") ||
                         info.activityInfo.name.toLowerCase().contains("twi")) {
                     targetedShare.putExtra(Intent.EXTRA_TEXT, tip.getText()+"\n"+tip.getTextItalic());
@@ -165,5 +168,20 @@ public class TipFragment extends Fragment {
     }
 
     private void shareVK() {
+        String uid = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,Context.MODE_PRIVATE).getString("VkUserId","");
+        String accessToken = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,Context.MODE_PRIVATE).getString("VkAccessToken","");
+        if(!uid.equals("")&& !accessToken.equals("")){
+            VkAccess.post(tip.getText(),uid,accessToken,new RequestCallback() {
+                @Override
+                public void onSuccess() {
+                    Toast.makeText(getActivity(),"Success",Toast.LENGTH_LONG).show();
+                }
+
+                @Override
+                public void onFailure() {
+                    Toast.makeText(getActivity(),"Error",Toast.LENGTH_LONG).show();
+                }
+            });
+        }
     }
 }

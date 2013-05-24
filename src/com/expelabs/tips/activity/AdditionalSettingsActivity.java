@@ -2,6 +2,7 @@ package com.expelabs.tips.activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -14,6 +15,9 @@ import com.actionbarsherlock.view.MenuItem;
 import com.billing.IabHelper;
 import com.billing.IabResult;
 import com.billing.Purchase;
+import com.expelabs.social.view.OAuthDialog;
+import com.expelabs.social.webclient.AuthListener;
+import com.expelabs.social.webclient.VkAuthClient;
 import com.expelabs.tips.R;
 import com.expelabs.tips.app.*;
 import com.expelabs.tips.delegate.PurchaseDelegate;
@@ -36,6 +40,7 @@ public class AdditionalSettingsActivity extends SherlockActivity {
     private ImageView buyHome;
     private ImageView buyWork;
     private ImageView buyLifestyle;
+    private OAuthDialog oAuthDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,25 +56,45 @@ public class AdditionalSettingsActivity extends SherlockActivity {
         findViewById(R.id.share_facebook).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).edit().putInt("share",Share.FACEBOOK).commit();
+                getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt("share", Share.FACEBOOK).commit();
             }
         });
         findViewById(R.id.share_vk).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).edit().putInt("share",Share.VK).commit();
+                VkAuthClient vkAuthClient = new VkAuthClient(DailyTipsApp.VK_APP_ID, DailyTipsApp.VK_SCOPE, new AuthListener() {
+                    @Override
+                    public void onSuccess(String url) {
+                        oAuthDialog.dismiss();
+                        String[] params = url.substring(VkAuthClient.VK_REDIRECT_URI.length()+1).split("&");
+                        SharedPreferences.Editor editor = getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).edit();
+                        editor.putString("VkAccessToken", params[0].split("=")[1]);
+                        editor.putString("VkExpiresIn",  params[0].split("=")[1]);
+                        editor.putString("VkUserId",  params[0].split("=")[1]);
+                        editor.putLong("VkAccessTime", System.currentTimeMillis());
+                        editor.commit();
+                    }
+
+                    @Override
+                    public void onError() {
+                        Toast.makeText(AdditionalSettingsActivity.this,"Error",Toast.LENGTH_LONG).show();
+                        oAuthDialog.dismiss();
+                    }
+                });
+                oAuthDialog = new OAuthDialog(AdditionalSettingsActivity.this, vkAuthClient);
+                getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt("share", Share.VK).commit();
             }
         });
         findViewById(R.id.share_twitter).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).edit().putInt("share",Share.TWITTER).commit();
+                getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt("share", Share.TWITTER).commit();
             }
         });
         findViewById(R.id.share_email).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).edit().putInt("share",Share.EMAIL).commit();
+                getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt("share", Share.EMAIL).commit();
             }
         });
     }
