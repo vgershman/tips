@@ -23,7 +23,15 @@ import com.expelabs.tips.app.*;
 import com.expelabs.tips.delegate.PurchaseDelegate;
 import com.expelabs.tips.dto.Share;
 import com.expelabs.tips.util.BillingUtils;
+import com.facebook.Session;
+import com.facebook.SessionState;
+import com.facebook.UiLifecycleHelper;
+import com.facebook.android.DialogError;
+import com.facebook.android.Facebook;
+import com.facebook.android.FacebookError;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -41,6 +49,8 @@ public class AdditionalSettingsActivity extends SherlockActivity {
     private ImageView buyWork;
     private ImageView buyLifestyle;
     private OAuthDialog oAuthDialog;
+    private UiLifecycleHelper lifecycleHelper;
+    Session.StatusCallback callback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,13 +60,25 @@ public class AdditionalSettingsActivity extends SherlockActivity {
         initBuyComponents();
         initShareComponents();
         bindUIbyPurchasese();
+        callback = new Session.StatusCallback() {
+            @Override
+            public void call(Session session, SessionState state, Exception exception) {
+
+            }
+        };
+
+        lifecycleHelper = new UiLifecycleHelper(this, callback);
+        lifecycleHelper.onCreate(savedInstanceState);
     }
 
     private void initShareComponents() {
         findViewById(R.id.share_facebook).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt("share", Share.FACEBOOK).commit();
+
+
+                Session.openActiveSession(AdditionalSettingsActivity.this, true, callback);
+                        getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt("share", Share.FACEBOOK).commit();
             }
         });
         findViewById(R.id.share_vk).setOnClickListener(new View.OnClickListener() {
@@ -66,22 +88,23 @@ public class AdditionalSettingsActivity extends SherlockActivity {
                     @Override
                     public void onSuccess(String url) {
                         oAuthDialog.dismiss();
-                        String[] params = url.substring(VkAuthClient.VK_REDIRECT_URI.length()+1).split("&");
-                        SharedPreferences.Editor editor = getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).edit();
+                        String[] params = url.substring(VkAuthClient.VK_REDIRECT_URI.length() + 1).split("&");
+                        SharedPreferences.Editor editor = getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit();
                         editor.putString("VkAccessToken", params[0].split("=")[1]);
-                        editor.putString("VkExpiresIn",  params[0].split("=")[1]);
-                        editor.putString("VkUserId",  params[0].split("=")[1]);
+                        editor.putString("VkExpiresIn", params[0].split("=")[1]);
+                        editor.putString("VkUserId", params[0].split("=")[1]);
                         editor.putLong("VkAccessTime", System.currentTimeMillis());
                         editor.commit();
                     }
 
                     @Override
                     public void onError() {
-                        Toast.makeText(AdditionalSettingsActivity.this,"Error",Toast.LENGTH_LONG).show();
+                        Toast.makeText(AdditionalSettingsActivity.this, "Error", Toast.LENGTH_LONG).show();
                         oAuthDialog.dismiss();
                     }
                 });
                 oAuthDialog = new OAuthDialog(AdditionalSettingsActivity.this, vkAuthClient);
+                oAuthDialog.show(getFragmentManager(), "");
                 getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt("share", Share.VK).commit();
             }
         });
@@ -212,6 +235,7 @@ public class AdditionalSettingsActivity extends SherlockActivity {
     protected void onResume() {
         super.onResume();
         DailyTipsApp.setContext(this);
+        lifecycleHelper.onResume();
     }
 
     @Override
@@ -220,5 +244,18 @@ public class AdditionalSettingsActivity extends SherlockActivity {
             DailyTipsApp.getBillingUtils().handleActivityResult(requestCode, resultCode, data);
         }
         super.onActivityResult(requestCode, resultCode, data);
+        lifecycleHelper.onActivityResult(requestCode,resultCode,data);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+            lifecycleHelper.onDestroy();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        lifecycleHelper.onPause();
     }
 }

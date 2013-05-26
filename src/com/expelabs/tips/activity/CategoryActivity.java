@@ -225,4 +225,9 @@ public class CategoryActivity extends SherlockFragmentActivity {
         finish();
         overridePendingTransition(R.anim.appear_from_left,R.anim.disappear_to_right);
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);    //To change body of overridden methods use File | Settings | File Templates.
+    }
 }

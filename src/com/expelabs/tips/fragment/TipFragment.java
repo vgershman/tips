@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,11 +23,16 @@ import com.expelabs.tips.delegate.NavigationDelegate;
 import com.expelabs.tips.dto.Share;
 import com.expelabs.tips.dto.Tip;
 import com.expelabs.tips.util.ImageUtils;
+import com.facebook.*;
+import com.facebook.android.Facebook;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -41,6 +47,8 @@ public class TipFragment extends Fragment {
     private Tip tip;
     private ImageView socialButton;
     private static NavigationDelegate navigationDelegate;
+
+
 
     public static TipFragment newInstance(Tip tip, NavigationDelegate navigationDelegateParam) {
         navigationDelegate = navigationDelegateParam;
@@ -164,11 +172,78 @@ public class TipFragment extends Fragment {
         startActivity(chooserIntent);
     }
 
-    private void shareFB() {
+
+        private void shareFB() {
+            Session session = Session.openActiveSession(getActivity(), true, new Session.StatusCallback() {
+                @Override
+                public void call(Session session, SessionState state, Exception exception) {
+
+                }
+            });
+            final List<String> PERMISSIONS = Arrays.asList("publish_actions");
+
+            if (session != null){
+
+
+                // Check for publish permissions
+                List<String> permissions = session.getPermissions();
+
+
+                if(!permissions.contains(PERMISSIONS.get(0))){
+
+                    Session.NewPermissionsRequest newPermissionsRequest = new Session
+                            .NewPermissionsRequest(this, PERMISSIONS);
+                    session.requestNewPublishPermissions(newPermissionsRequest);
+                    return;
+                }
+
+
+                Bundle postParams = new Bundle();
+                postParams.putString("name", "Facebook SDK for Android");
+                postParams.putString("caption", "Build great social apps and get more installs.");
+                postParams.putString("description", "The Facebook SDK for Android makes it easier and faster to develop Facebook integrated Android apps.");
+                postParams.putString("link", "https://developers.facebook.com/android");
+                postParams.putString("picture", "https://raw.github.com/fbsamples/ios-3.x-howtos/master/Images/iossdk_logo.png");
+
+                Request.Callback callback= new Request.Callback() {
+                    public void onCompleted(Response response) {
+                        JSONObject graphResponse = response
+                                .getGraphObject()
+                               .getInnerJSONObject();
+                        String postId = null;
+                        try {
+                            postId = graphResponse.getString("id");
+                        } catch (JSONException e) {
+                            Log.i("ES",
+                                    "JSON error " + e.getMessage());
+                        }
+                        FacebookRequestError error = response.getError();
+                        if (error != null) {
+                            Toast.makeText(getActivity()
+                                    .getApplicationContext(),
+                                    error.getErrorMessage(),
+                                    Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(getActivity()
+                                    .getApplicationContext(),
+                                    postId,
+                                    Toast.LENGTH_LONG).show();
+                        }
+                    }
+                };
+
+                Request request = new Request(session, "me/feed", postParams,
+                        HttpMethod.POST, callback);
+
+                RequestAsyncTask task = new RequestAsyncTask(request);
+                task.execute();
+            }
+
+
     }
 
     private void shareVK() {
-        String uid = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,Context.MODE_PRIVATE).getString("VkUserId","");
+        String uid = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,Context.MODE_PRIVATE).getString("VkUserId", "");
         String accessToken = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,Context.MODE_PRIVATE).getString("VkAccessToken","");
         if(!uid.equals("")&& !accessToken.equals("")){
             VkAccess.post(tip.getText(),uid,accessToken,new RequestCallback() {
@@ -179,9 +254,11 @@ public class TipFragment extends Fragment {
 
                 @Override
                 public void onFailure() {
-                    Toast.makeText(getActivity(),"Error",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), "Error", Toast.LENGTH_LONG).show();
                 }
             });
         }
     }
+
+
 }
