@@ -31,7 +31,7 @@ public class DailyTipsApp extends Application {
 
     private static BillingUtils billingUtils;
     private static Context appContext;
-    public static String VK_APP_ID = "";
+    public static String VK_APP_ID = "3675449";
     public static String VK_SCOPE = "wall";
 
     @Override
@@ -68,7 +68,7 @@ public class DailyTipsApp extends Application {
 
     public static void incrementScrollCounter(){
         scrollngCounter++;
-        if(scrollngCounter % 10 == 0){
+        if(scrollngCounter % 25 == 0){
             if(!appContext.getSharedPreferences(PREFERENCES_NAME,MODE_PRIVATE).getBoolean("bought", false)){
                 AlertDialog.Builder builder = new AlertDialog.Builder(appContext);
                 builder.setTitle(appContext.getString(R.string.more_tips));
@@ -76,7 +76,7 @@ public class DailyTipsApp extends Application {
                 builder.create().show();
             }
         }
-        if(scrollngCounter % 15 ==0){
+        /*if(scrollngCounter % 15 ==0){
             if(!appContext.getSharedPreferences(PREFERENCES_NAME,MODE_PRIVATE).getBoolean("rate", false)){
                 AlertDialog.Builder builder = new AlertDialog.Builder(appContext);
                 builder.setTitle("Rate this app");
@@ -84,6 +84,7 @@ public class DailyTipsApp extends Application {
                 builder.create().show();
             }
         }
+        */
     }
 
 }

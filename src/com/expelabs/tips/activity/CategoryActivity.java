@@ -61,12 +61,14 @@ public class CategoryActivity extends SherlockFragmentActivity {
         tipPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int i, float v, int i2) {
-                //To change body of implemented methods use File | Settings | File Templates.
+                if(i < i2){
+                    DailyTipsApp.incrementScrollCounter();
+                }
             }
 
             @Override
             public void onPageSelected(int i) {
-                DailyTipsApp.incrementScrollCounter();
+
             }
 
             @Override

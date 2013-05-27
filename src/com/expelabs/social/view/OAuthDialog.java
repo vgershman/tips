@@ -8,9 +8,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
 import com.expelabs.social.webclient.AuthClientInterface;
+import com.expelabs.tips.R;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,11 +25,14 @@ import com.expelabs.social.webclient.AuthClientInterface;
 public class OAuthDialog extends Dialog {
 
     private WebView webView;
-    private AuthClientInterface webClient;
+    private WebViewClient webClient;
 
-    public OAuthDialog(Context context, AuthClientInterface client) {
-        super(context);
+    public OAuthDialog(Context context, WebViewClient client) {
+        super(context, android.R.style.Theme_NoTitleBar_Fullscreen);
+
+
         webView = new WebView(context);
+        webView.setWebViewClient(client);
         webClient = client;
     }
 
@@ -39,7 +45,7 @@ public class OAuthDialog extends Dialog {
     @Override
     public void show() {
         super.show();
-        webView.loadUrl(webClient.loginUrl());
+        webView.loadUrl(((AuthClientInterface) webClient).loginUrl());
     }
 }
 

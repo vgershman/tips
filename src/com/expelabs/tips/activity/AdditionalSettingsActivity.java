@@ -62,6 +62,7 @@ public class AdditionalSettingsActivity extends SherlockActivity {
         findViewById(R.id.share_vk).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 VkAuthClient vkAuthClient = new VkAuthClient(DailyTipsApp.VK_APP_ID, DailyTipsApp.VK_SCOPE, new AuthListener() {
                     @Override
                     public void onSuccess(String url) {
@@ -69,8 +70,8 @@ public class AdditionalSettingsActivity extends SherlockActivity {
                         String[] params = url.substring(VkAuthClient.VK_REDIRECT_URI.length()+1).split("&");
                         SharedPreferences.Editor editor = getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).edit();
                         editor.putString("VkAccessToken", params[0].split("=")[1]);
-                        editor.putString("VkExpiresIn",  params[0].split("=")[1]);
-                        editor.putString("VkUserId",  params[0].split("=")[1]);
+                        editor.putString("VkExpiresIn",  params[1].split("=")[1]);
+                        editor.putString("VkUserId",  params[2].split("=")[1]);
                         editor.putLong("VkAccessTime", System.currentTimeMillis());
                         editor.commit();
                     }
@@ -213,7 +214,7 @@ public class AdditionalSettingsActivity extends SherlockActivity {
     protected void onResume() {
         super.onResume();
         DailyTipsApp.setContext(this);
-        lifecycleHelper.onResume();
+        //lifecycleHelper.onResume();
     }
 
     @Override
@@ -222,18 +223,18 @@ public class AdditionalSettingsActivity extends SherlockActivity {
             DailyTipsApp.getBillingUtils().handleActivityResult(requestCode, resultCode, data);
         }
         super.onActivityResult(requestCode, resultCode, data);
-        lifecycleHelper.onActivityResult(requestCode,resultCode,data);
+        //lifecycleHelper.onActivityResult(requestCode,resultCode,data);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-            lifecycleHelper.onDestroy();
+            //lifecycleHelper.onDestroy();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        lifecycleHelper.onPause();
+        //lifecycleHelper.onPause();
     }
 }

@@ -6,6 +6,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -36,11 +37,11 @@ public class RequestTask extends AsyncTask<Object,Void,Void> {
     @Override
     protected Void doInBackground(Object... params) {
         HttpClient client = new DefaultHttpClient();
-        HttpGet httpGet = new HttpGet(url);
+        HttpPost httpPost = new HttpPost(url);
         StringBuilder builder=new StringBuilder();
         JSONArray jsonArray=null;
         try {
-            HttpResponse response = client.execute(httpGet);
+            HttpResponse response = client.execute(httpPost);
             StatusLine statusLine = response.getStatusLine();
             int statusCode = statusLine.getStatusCode();
 
