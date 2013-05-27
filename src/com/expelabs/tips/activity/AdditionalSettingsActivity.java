@@ -213,6 +213,7 @@ public class AdditionalSettingsActivity extends SherlockActivity {
     protected void onResume() {
         super.onResume();
         DailyTipsApp.setContext(this);
+        lifecycleHelper.onResume();
     }
 
     @Override
@@ -221,5 +222,18 @@ public class AdditionalSettingsActivity extends SherlockActivity {
             DailyTipsApp.getBillingUtils().handleActivityResult(requestCode, resultCode, data);
         }
         super.onActivityResult(requestCode, resultCode, data);
+        lifecycleHelper.onActivityResult(requestCode,resultCode,data);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+            lifecycleHelper.onDestroy();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        lifecycleHelper.onPause();
     }
 }

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/depend/actionbarsherlock/actionbarsherlock.iml" filepath="$PROJECT_DIR$/depend/actionbarsherlock/actionbarsherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/facebook.iml" filepath="$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/facebook.iml" />
       <module fileurl="file://$PROJECT_DIR$/tips.iml" filepath="$PROJECT_DIR$/tips.iml" />
     </modules>
   </component>
