@@ -151,7 +151,7 @@ public class CategoryActivity extends SherlockFragmentActivity {
     }
 
     private void initActionBar() {
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         int titleId = 0;
         switch (currentCategory) {
             case COOKING:
@@ -170,7 +170,7 @@ public class CategoryActivity extends SherlockFragmentActivity {
                 titleId = R.string.category_random;
                 break;
         }
-        getActionBar().setTitle(titleId);
+        getSupportActionBar().setTitle(titleId);
     }
 
     @Override

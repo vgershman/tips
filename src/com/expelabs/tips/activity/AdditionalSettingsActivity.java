@@ -82,6 +82,7 @@ public class AdditionalSettingsActivity extends SherlockActivity {
                     }
                 });
                 oAuthDialog = new OAuthDialog(AdditionalSettingsActivity.this, vkAuthClient);
+                oAuthDialog.show();
                 getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt("share", Share.VK).commit();
             }
         });
@@ -100,8 +101,8 @@ public class AdditionalSettingsActivity extends SherlockActivity {
     }
 
     private void initActionBar() {
-        getActionBar().setDisplayHomeAsUpEnabled(true);
-        getActionBar().setTitle(getString(R.string.additional_settings_title));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle(getString(R.string.additional_settings_title));
     }
 
     @Override
