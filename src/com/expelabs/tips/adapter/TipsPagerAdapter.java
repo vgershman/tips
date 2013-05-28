@@ -24,6 +24,11 @@ public class TipsPagerAdapter extends FragmentStatePagerAdapter {
     private List<Tip> tipList;
     private NavigationDelegate navigationDelegate;
     private ViewPager viewPager;
+    private TipFragment current;
+
+    public TipFragment getCurrent() {
+        return current;
+    }
 
     public TipsPagerAdapter(FragmentManager fm, List<Tip> tipList, ViewPager tipsPager) {
         super(fm);
@@ -49,7 +54,8 @@ public class TipsPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int i) {
         int realPosition = i % tipList.size();
-        return TipFragment.newInstance(tipList.get(realPosition), navigationDelegate);
+        current = TipFragment.newInstance(tipList.get(realPosition), navigationDelegate);
+        return current;
     }
 
     @Override

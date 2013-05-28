@@ -260,5 +260,7 @@ public class TipFragment extends Fragment {
         }
     }
 
-
+    public Tip getTip() {
+        return tip;
+    }
 }

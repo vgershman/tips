@@ -37,6 +37,7 @@ public class CategoryActivity extends SherlockFragmentActivity {
     private Category currentCategory;
     private static final String CURRENT_ITEM = "cur_item";
     private ViewPager tipPager;
+    private TipsPagerAdapter tipsPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,9 +46,8 @@ public class CategoryActivity extends SherlockFragmentActivity {
         currentCategory = (Category) getIntent().getSerializableExtra("category");
         initActionBar();
         initControls();
+        DailyTipsApp.clearScrollCounter();
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -61,14 +61,12 @@ public class CategoryActivity extends SherlockFragmentActivity {
         tipPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int i, float v, int i2) {
-                if(i < i2){
-                    DailyTipsApp.incrementScrollCounter();
-                }
+
             }
 
             @Override
             public void onPageSelected(int i) {
-
+                DailyTipsApp.incrementScrollCounter();
             }
 
             @Override
@@ -76,7 +74,6 @@ public class CategoryActivity extends SherlockFragmentActivity {
                 //To change body of implemented methods use File | Settings | File Templates.
             }
         });
-
     }
 
     private List<Tip> prepareTips(Category category) {
@@ -108,7 +105,7 @@ public class CategoryActivity extends SherlockFragmentActivity {
     public List<Tip> loadTips(Category category, int tipsFileResourceId) {
         Map<String, Boolean> purchases = DailyTipsApp.getPurchases();
         int limit = 25;
-        if(purchases.get(DailyTipsApp.SKU_TOTAL)||purchases.get(getPackageName()+"."+category.name().toLowerCase())){
+        if (purchases.get(DailyTipsApp.SKU_TOTAL) || purchases.get(getPackageName() + "." + category.name().toLowerCase())) {
             limit = 125;
         }
         List<Tip> results = new ArrayList<Tip>();
@@ -118,7 +115,7 @@ public class CategoryActivity extends SherlockFragmentActivity {
         try {
             while ((nextLine = reader.readNext()) != null) {
                 i++;
-                if( i > limit){
+                if (i > limit) {
                     break;
                 }
                 Tip newTip = new Tip();
@@ -146,7 +143,7 @@ public class CategoryActivity extends SherlockFragmentActivity {
         super.onResume();
         DailyTipsApp.setContext(this);
         List<Tip> tipList = prepareTips(currentCategory);
-        TipsPagerAdapter tipsPagerAdapter = new TipsPagerAdapter(getSupportFragmentManager(), tipList, tipPager);
+        tipsPagerAdapter = new TipsPagerAdapter(getSupportFragmentManager(), tipList, tipPager);
         tipPager.setAdapter(tipsPagerAdapter);
         int currentItem = getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).getInt(CURRENT_ITEM + currentCategory.name(), TipsPagerAdapter.FAKE_COUNT / 2);
         tipPager.setCurrentItem(currentItem, false);
@@ -186,36 +183,29 @@ public class CategoryActivity extends SherlockFragmentActivity {
                 overridePendingTransition(R.anim.appear_from_right, R.anim.disappear_to_left);
                 return true;
             case R.id.menu_item_share:
-                share("twi","");
+                share();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
-    private void share(String nameApp, String imagePath) {
+
+    private void share() {
+        Tip tip2Share = tipsPagerAdapter.getCurrent().getTip();
         List<Intent> targetedShareIntents = new ArrayList<Intent>();
         Intent share = new Intent(android.content.Intent.ACTION_SEND);
         share.setType("image/jpeg");
         List<ResolveInfo> resInfo = getPackageManager().queryIntentActivities(share, 0);
-        if (!resInfo.isEmpty()){
+        if (!resInfo.isEmpty()) {
             for (ResolveInfo info : resInfo) {
                 Intent targetedShare = new Intent(android.content.Intent.ACTION_SEND);
                 targetedShare.setType("image/jpeg"); // put here your mime type
-
-               // if (info.activityInfo.packageName.toLowerCase().contains(nameApp) ||
-                 //       info.activityInfo.name.toLowerCase().contains(nameApp)) {
-                    targetedShare.putExtra(Intent.EXTRA_TEXT, "My body of post/email");
-                try {
-                    targetedShare.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(ImageUtils.writeImageToFile(BitmapFactory.decodeStream(getAssets().open("tipsImages/cooking/1.jpg")),"temp"))));
-                } catch (IOException e) {
-                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-                }
+                targetedShare.putExtra(Intent.EXTRA_TEXT, tip2Share.getText() + "\n" + tip2Share.getTextItalic());
+                targetedShare.putExtra(Intent.EXTRA_STREAM, DailyTipsApp.HOSTING_BASE_URL + "/" + tip2Share.getCategoryName().toLowerCase() + "/" + tip2Share.getId() + ".jpg");
                 targetedShare.setPackage(info.activityInfo.packageName);
-                    targetedShareIntents.add(targetedShare);
-
+                targetedShareIntents.add(targetedShare);
             }
-
-            Intent chooserIntent = Intent.createChooser(targetedShareIntents.remove(0), "Select app to share");
+            Intent chooserIntent = Intent.createChooser(targetedShareIntents.remove(0), getString(R.string.share_select_ac));
             chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, targetedShareIntents.toArray(new Parcelable[]{}));
             startActivity(chooserIntent);
         }
@@ -225,7 +215,7 @@ public class CategoryActivity extends SherlockFragmentActivity {
     public void onBackPressed() {
         super.onBackPressed();
         finish();
-        overridePendingTransition(R.anim.appear_from_left,R.anim.disappear_to_right);
+        overridePendingTransition(R.anim.appear_from_left, R.anim.disappear_to_right);
     }
 
     @Override

@@ -1,9 +1,15 @@
 package com.expelabs.tips.app;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Application;
+import android.app.DatePickerDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import com.expelabs.tips.R;
+import com.expelabs.tips.activity.AdditionalSettingsActivity;
 import com.expelabs.tips.util.BillingUtils;
 
 import java.util.HashMap;
@@ -31,6 +37,7 @@ public class DailyTipsApp extends Application {
 
     private static BillingUtils billingUtils;
     private static Context appContext;
+    public static String HOSTING_BASE_URL = "http://alexeypetrov.com/";
     public static String VK_APP_ID = "3675449";
     public static String VK_SCOPE = "wall";
 
@@ -61,30 +68,67 @@ public class DailyTipsApp extends Application {
 
     @Override
     public void onTerminate() {
-
         super.onTerminate();
         billingUtils.dispose();
+    }
+
+    public static void clearScrollCounter(){
+        scrollngCounter = 0;
     }
 
     public static void incrementScrollCounter(){
         scrollngCounter++;
         if(scrollngCounter % 25 == 0){
-            if(!appContext.getSharedPreferences(PREFERENCES_NAME,MODE_PRIVATE).getBoolean("bought", false)){
+            Map<String,Boolean>purchases = DailyTipsApp.getPurchases();
+            if(!purchases.values().contains(Boolean.TRUE)){
                 AlertDialog.Builder builder = new AlertDialog.Builder(appContext);
-                builder.setTitle(appContext.getString(R.string.more_tips));
-                builder.setMessage("Test");
+                builder.setMessage(appContext.getString(R.string.more_tips));
+                builder.setNegativeButton(appContext.getString(R.string.more_no), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.setPositiveButton(appContext.getString(R.string.more_yes),new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        appContext.startActivity(new Intent(appContext, AdditionalSettingsActivity.class));
+                        ((Activity)appContext).overridePendingTransition(R.anim.appear_from_right, R.anim.disappear_to_left);
+                    }
+                });
                 builder.create().show();
             }
         }
-        /*if(scrollngCounter % 15 ==0){
+        if(scrollngCounter % 20 ==0){
             if(!appContext.getSharedPreferences(PREFERENCES_NAME,MODE_PRIVATE).getBoolean("rate", false)){
                 AlertDialog.Builder builder = new AlertDialog.Builder(appContext);
-                builder.setTitle("Rate this app");
-                builder.setMessage("Test");
+                builder.setMessage(appContext.getString(R.string.rate_app_dial));
+                builder.setPositiveButton(appContext.getString(R.string.rate_yes), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        final Intent market = new Intent(Intent.ACTION_VIEW,
+                                Uri.parse(appContext.getString(R.string.market)));
+                        appContext.getSharedPreferences(PREFERENCES_NAME, MODE_PRIVATE).edit().putBoolean("rate", true).commit();
+                        appContext.startActivity(market);
+                    }
+                });
+                builder.setNegativeButton(appContext.getString(R.string.rate_cancel), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                        appContext.getSharedPreferences(PREFERENCES_NAME, MODE_PRIVATE).edit().putBoolean("rate", true).commit();
+                    }
+                });
+                builder.setNeutralButton(appContext.getString(R.string.btn_later), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
                 builder.create().show();
             }
         }
-        */
+
     }
 
 }

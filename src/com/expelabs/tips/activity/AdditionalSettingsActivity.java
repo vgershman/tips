@@ -23,7 +23,12 @@ import com.expelabs.tips.app.*;
 import com.expelabs.tips.delegate.PurchaseDelegate;
 import com.expelabs.tips.dto.Share;
 import com.expelabs.tips.util.BillingUtils;
+import com.facebook.Session;
+import com.facebook.SessionState;
+import com.facebook.UiLifecycleHelper;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -41,6 +46,10 @@ public class AdditionalSettingsActivity extends SherlockActivity {
     private ImageView buyWork;
     private ImageView buyLifestyle;
     private OAuthDialog oAuthDialog;
+    private UiLifecycleHelper lifecycleHelper;
+    private Session.StatusCallback statusCallback;
+    private List<String> permissions = new ArrayList<String>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +59,16 @@ public class AdditionalSettingsActivity extends SherlockActivity {
         initBuyComponents();
         initShareComponents();
         bindUIbyPurchasese();
+        permissions.add("publish_actions");
+        statusCallback = new Session.StatusCallback() {
+            @Override
+            public void call(Session session, SessionState state, Exception exception) {
+                if(state.equals(SessionState.OPENED)){
+                    session.requestNewPublishPermissions(new Session.NewPermissionsRequest(AdditionalSettingsActivity.this,permissions));
+                }
+            }
+        };
+        lifecycleHelper = new UiLifecycleHelper(this,statusCallback);
     }
 
     private void initShareComponents() {
@@ -57,28 +76,28 @@ public class AdditionalSettingsActivity extends SherlockActivity {
             @Override
             public void onClick(View v) {
                 getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt("share", Share.FACEBOOK).commit();
+                Session.openActiveSession(AdditionalSettingsActivity.this,true,statusCallback);
             }
         });
         findViewById(R.id.share_vk).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 VkAuthClient vkAuthClient = new VkAuthClient(DailyTipsApp.VK_APP_ID, DailyTipsApp.VK_SCOPE, new AuthListener() {
                     @Override
                     public void onSuccess(String url) {
                         oAuthDialog.dismiss();
-                        String[] params = url.substring(VkAuthClient.VK_REDIRECT_URI.length()+1).split("&");
-                        SharedPreferences.Editor editor = getSharedPreferences(DailyTipsApp.PREFERENCES_NAME,MODE_PRIVATE).edit();
+                        String[] params = url.substring(VkAuthClient.VK_REDIRECT_URI.length() + 1).split("&");
+                        SharedPreferences.Editor editor = getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit();
                         editor.putString("VkAccessToken", params[0].split("=")[1]);
-                        editor.putString("VkExpiresIn",  params[1].split("=")[1]);
-                        editor.putString("VkUserId",  params[2].split("=")[1]);
+                        editor.putString("VkExpiresIn", params[1].split("=")[1]);
+                        editor.putString("VkUserId", params[2].split("=")[1]);
                         editor.putLong("VkAccessTime", System.currentTimeMillis());
                         editor.commit();
                     }
 
                     @Override
                     public void onError() {
-                        Toast.makeText(AdditionalSettingsActivity.this,"Error",Toast.LENGTH_LONG).show();
+                        Toast.makeText(AdditionalSettingsActivity.this, "Error", Toast.LENGTH_LONG).show();
                         oAuthDialog.dismiss();
                     }
                 });
@@ -223,18 +242,18 @@ public class AdditionalSettingsActivity extends SherlockActivity {
             DailyTipsApp.getBillingUtils().handleActivityResult(requestCode, resultCode, data);
         }
         super.onActivityResult(requestCode, resultCode, data);
-        //lifecycleHelper.onActivityResult(requestCode,resultCode,data);
+        lifecycleHelper.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-            //lifecycleHelper.onDestroy();
+        lifecycleHelper.onDestroy();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        //lifecycleHelper.onPause();
+        lifecycleHelper.onPause();
     }
 }

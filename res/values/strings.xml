@@ -10,4 +10,12 @@
     <string name="choose_share">Choose preferred sharing service</string>
     <string name="more_tips">Want more tips?</string>
     <string name="app_num">146730642180542</string>
+    <string name="share_select_ac">Select app to share</string>
+    <string name="market">http://market.android.com/details?id=com.expelabs.tips</string>
+    <string name="btn_later">Later</string>
+    <string name="rate_cancel">No</string>
+    <string name="rate_yes">Yes</string>
+    <string name="rate_app_dial">Rate this app</string>
+    <string name="more_no">No</string>
+    <string name="more_yes">Yes</string>
 </resources>

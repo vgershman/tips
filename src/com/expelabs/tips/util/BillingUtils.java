@@ -64,8 +64,10 @@ public class BillingUtils {
                         boolean home = false;
                         boolean work = false;
                         boolean life = false;
+
                         if(inventory.hasPurchase(DailyTipsApp.SKU_TOTAL)){
                             total = true;
+
                         }
                         if(inventory.hasPurchase(DailyTipsApp.SKU_HOME)){
                             home = true;
