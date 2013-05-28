@@ -18,6 +18,7 @@ public class VkAccess {
     public static void post(String content, String uid, String token, RequestCallback requestCallback) {
         String requestUrl = VK_METHOD_BASE + "wall.post?uid=<uid>&access_token=<ac>&message=<message>"
                 .replace("<uid>", uid).replace("<ac>", token).replace("<message>", URLEncoder.encode(content));
+
         new RequestTask(requestUrl, requestCallback).execute();
     }
 }

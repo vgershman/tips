@@ -194,14 +194,14 @@ public class CategoryActivity extends SherlockFragmentActivity {
         Tip tip2Share = tipsPagerAdapter.getCurrent().getTip();
         List<Intent> targetedShareIntents = new ArrayList<Intent>();
         Intent share = new Intent(android.content.Intent.ACTION_SEND);
-        share.setType("image/jpeg");
+        share.setType("plain/text");
         List<ResolveInfo> resInfo = getPackageManager().queryIntentActivities(share, 0);
         if (!resInfo.isEmpty()) {
             for (ResolveInfo info : resInfo) {
                 Intent targetedShare = new Intent(android.content.Intent.ACTION_SEND);
                 targetedShare.setType("image/jpeg"); // put here your mime type
                 targetedShare.putExtra(Intent.EXTRA_TEXT, tip2Share.getText() + "\n" + tip2Share.getTextItalic());
-                targetedShare.putExtra(Intent.EXTRA_STREAM, DailyTipsApp.HOSTING_BASE_URL + "/" + tip2Share.getCategoryName().toLowerCase() + "/" + tip2Share.getId() + ".jpg");
+                targetedShare.putExtra(Intent.EXTRA_STREAM, Uri.parse(DailyTipsApp.HOSTING_BASE_URL + "/" + tip2Share.getCategoryName().toLowerCase() + "/" + tip2Share.getId() + ".jpg"));
                 targetedShare.setPackage(info.activityInfo.packageName);
                 targetedShareIntents.add(targetedShare);
             }
