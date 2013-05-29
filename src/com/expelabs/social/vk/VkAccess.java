@@ -1,7 +1,10 @@
 package com.expelabs.social.vk;
 
 import android.widget.Toast;
+import com.facebook.Response;
+import org.json.JSONObject;
 
+import java.io.File;
 import java.net.URLEncoder;
 
 /**
@@ -13,12 +16,88 @@ import java.net.URLEncoder;
  */
 public class VkAccess {
 
-    private final static String VK_METHOD_BASE = "https://api.vk.com/method/";
+	private final static String VK_METHOD_BASE = "https://api.vk.com/method/";
 
-    public static void post(String content, String uid, String token, RequestCallback requestCallback) {
-        String requestUrl = VK_METHOD_BASE + "wall.post?uid=<uid>&access_token=<ac>&message=<message>"
-                .replace("<uid>", uid).replace("<ac>", token).replace("<message>", URLEncoder.encode(content));
+	public static void post(final String content, final String link,final File photo, final String uid, final String token, final RequestCallback requestCallback) {
 
-        new RequestTask(requestUrl, requestCallback).execute();
-    }
+		getUploadSever(uid, token, new RequestCallback() {
+			@Override
+			public void onSuccess(JSONObject response) {
+				if (response != null) {
+					String uploadUrl = response.optString("upload_url");
+					if (uploadUrl != null) {
+						uploadPhoto(uploadUrl, photo, new RequestCallback() {
+							@Override
+							public void onSuccess(JSONObject response) {
+								if (response != null) {
+									String server = response.optString("server");
+									String photo = response.optString("photo");
+									String hash = response.optString("hash");
+									if (server != null && photo != null && hash != null) {
+										saveWallPhoto(server, photo, hash, uid, token, new RequestCallback() {
+											@Override
+											public void onSuccess(JSONObject response) {
+												if(response!=null){
+													String id = response.optString("id");
+													if(id!=null){
+														String attachments = id + "," + link;
+														final String requestUrl = VK_METHOD_BASE + "wall.post?uid=<uid>&access_token=<ac>&message=<message>&attachments=<at>"
+																.replace("<uid>", uid).replace("<ac>", token).replace("<message>", URLEncoder.encode(content).replace("<at>",attachments));
+														new RequestTask(false,requestUrl,null,requestCallback);
+													}else {
+														requestCallback.onFailure();
+													}
+												}else {
+													requestCallback.onFailure();
+												}
+											}
+
+											@Override
+											public void onFailure() {
+												requestCallback.onFailure();
+											}
+										});
+									} else {
+										requestCallback.onFailure();
+									}
+								} else {
+									requestCallback.onFailure();
+								}
+							}
+
+							@Override
+							public void onFailure() {
+								requestCallback.onFailure();
+							}
+						});
+					} else {
+						requestCallback.onFailure();
+					}
+				} else {
+					requestCallback.onFailure();
+				}
+			}
+
+			@Override
+			public void onFailure() {
+				requestCallback.onFailure();
+			}
+		});
+	}
+
+	public static void getUploadSever(String uid, String token, final RequestCallback requestCallback) {
+		String requestUploadServer = VK_METHOD_BASE + "photos.getWallUploadServer?uid=<uid>&access_token=<ac>"
+				.replace("<uid>", uid).replace("<ac>", token);
+		new RequestTask(false, requestUploadServer, null, requestCallback).execute();
+	}
+
+	public static void uploadPhoto(String uploadUrl, File file, RequestCallback requestCallback) {
+		new RequestTask(true, uploadUrl, file, requestCallback).execute();
+	}
+
+	public static void saveWallPhoto(String server, String photo, String hash, String uid, String token, RequestCallback callback) {
+		String requestUrl = VK_METHOD_BASE + "photos.saveWallPhoto?uid=<uid>&access_token=<ac>&server=<server>&photo=<photo>&hash=<hash>"
+				.replace("<uid>", uid).replace("<token>", token).replace("<server>", server).replace("<photo>", photo).replace("<hash>", hash);
+		new RequestTask(false, requestUrl, null, callback).execute();
+	}
 }

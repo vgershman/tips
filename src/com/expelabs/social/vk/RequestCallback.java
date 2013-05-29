@@ -1,5 +1,7 @@
 package com.expelabs.social.vk;
 
+import org.json.JSONObject;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Вадим
@@ -8,6 +10,6 @@ package com.expelabs.social.vk;
  * To change this template use File | Settings | File Templates.
  */
 public interface RequestCallback {
-    void onSuccess();
+    void onSuccess(JSONObject response);
     void onFailure();
 }

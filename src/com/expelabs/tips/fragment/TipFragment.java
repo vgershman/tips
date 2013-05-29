@@ -54,7 +54,6 @@ public class TipFragment extends Fragment {
 	private static NavigationDelegate navigationDelegate;
 	private OAuthDialog oAuthDialog;
 
-
 	public static TipFragment newInstance(Tip tip, NavigationDelegate navigationDelegateParam) {
 		navigationDelegate = navigationDelegateParam;
 		TipFragment pageFragment = new TipFragment();
@@ -91,7 +90,7 @@ public class TipFragment extends Fragment {
 		socialButton = (ImageView) view.findViewById(R.id.social_button);
 		Locale current = getResources().getConfiguration().locale;
 		int default_share = Share.FACEBOOK;
-		if(current.getCountry().equals("RU")){
+		if (current.getCountry().equals("RU")) {
 			default_share = Share.VK;
 		}
 		final int share_id = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, Context.MODE_PRIVATE).getInt("share", default_share);
@@ -159,10 +158,8 @@ public class TipFragment extends Fragment {
 				if (info.activityInfo.packageName.toLowerCase().contains("twi") ||
 						info.activityInfo.name.toLowerCase().contains("twi")) {
 					targetedShare.putExtra(Intent.EXTRA_TEXT, tip.getText() + "\n" + tip.getTextItalic());
-
-						targetedShare.putExtra(Intent.EXTRA_STREAM,
-								Uri.parse(DailyTipsApp.HOSTING_BASE_URL + "/" + tip.getCategoryName().toLowerCase() + "/" + tip.getId() + ".jpg"));
-
+					targetedShare.putExtra(Intent.EXTRA_STREAM,
+							Uri.parse(DailyTipsApp.HOSTING_BASE_URL + "/" + tip.getCategoryName().toLowerCase() + "/" + tip.getId() + ".jpg"));
 					targetedShare.setPackage(info.activityInfo.packageName);
 					targetedShareIntents.add(targetedShare);
 				}
@@ -176,39 +173,27 @@ public class TipFragment extends Fragment {
 		startActivity(chooserIntent);
 	}
 
-
 	private void shareFB() {
 		Session session = Session.openActiveSession(getActivity(), true, new Session.StatusCallback() {
 			@Override
 			public void call(Session session, SessionState state, Exception exception) {
-
 			}
 		});
 		final List<String> PERMISSIONS = Arrays.asList("publish_actions");
-
 		if (session != null) {
-
-
 			// Check for publish permissions
 			List<String> permissions = session.getPermissions();
-
-
 			if (!permissions.contains(PERMISSIONS.get(0))) {
-
 				Session.NewPermissionsRequest newPermissionsRequest = new Session
 						.NewPermissionsRequest(this, PERMISSIONS);
 				session.requestNewPublishPermissions(newPermissionsRequest);
 				return;
 			}
-
-
 			Bundle postParams = new Bundle();
 			postParams.putString("name", tip.getText());
 			postParams.putString("caption", tip.getTextItalic());
-
-			postParams.putString("link",getString(R.string.market));
+			postParams.putString("link", getString(R.string.market));
 			postParams.putString("picture", DailyTipsApp.HOSTING_BASE_URL + "/" + tip.getCategoryName().toLowerCase() + "/" + tip.getId() + ".jpg");
-
 			Request.Callback callback = new Request.Callback() {
 				public void onCompleted(Response response) {
 					JSONObject graphResponse = response
@@ -235,29 +220,23 @@ public class TipFragment extends Fragment {
 					}
 				}
 			};
-
 			Request request = new Request(session, "me/feed", postParams,
 					HttpMethod.POST, callback);
-
 			RequestAsyncTask task = new RequestAsyncTask(request);
 			task.execute();
 		}
-
-
 	}
 
 	private void shareVK() {
 		String uid = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, Context.MODE_PRIVATE).getString("VkUserId", "");
 		String accessToken = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, Context.MODE_PRIVATE).getString("VkAccessToken", "");
 		if (!uid.equals("") && !accessToken.equals("")) {
-
-
-			VkAccess.post("#советы" + '\n' + tip.getText() + '\n' + tip.getTextItalic() + '\n' +
-					DailyTipsApp.HOSTING_BASE_URL + "/" + tip.getCategoryName().toLowerCase() + "/" + tip.getId() + ".jpg",
-					uid, accessToken, new RequestCallback() {
+			File file = new File("file://android_asset/tipsImages/" + tip.getCategoryName().toLowerCase() + "/" + tip.getId() + ".jpg");
+			VkAccess.post("#советы" + '\n' + tip.getText() + '\n' + tip.getTextItalic() + '\n' + tip.getId() + ".jpg",
+					getString(R.string.market), file, uid, accessToken, new RequestCallback() {
 
 				@Override
-				public void onSuccess() {
+				public void onSuccess(JSONObject response) {
 					Toast.makeText(getActivity(), "Success", Toast.LENGTH_LONG).show();
 				}
 
@@ -267,7 +246,6 @@ public class TipFragment extends Fragment {
 				}
 			});
 		} else {
-
 			VkAuthClient vkAuthClient = new VkAuthClient(DailyTipsApp.VK_APP_ID, DailyTipsApp.VK_SCOPE, new AuthListener() {
 				@Override
 				public void onSuccess(String url) {
