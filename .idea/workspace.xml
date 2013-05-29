@@ -30,29 +30,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/httpmime-4.2.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/httpmime_4_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/101.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/101.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw/cooking.csv" afterPath="$PROJECT_DIR$/res/raw/cooking.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-ru/cooking.csv" afterPath="$PROJECT_DIR$/res/raw-ru/cooking.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw/home.csv" afterPath="$PROJECT_DIR$/res/raw/home.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-ru/home.csv" afterPath="$PROJECT_DIR$/res/raw-ru/home.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-ru/lifestyle.csv" afterPath="$PROJECT_DIR$/res/raw-ru/lifestyle.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw/work.csv" afterPath="$PROJECT_DIR$/res/raw/work.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-ru/work.csv" afterPath="$PROJECT_DIR$/res/raw-ru/work.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/share_email_selector.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/share_fb_selector.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/share_tw_selector.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/share_vk_selector.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/social/view/OAuthDialog.java" afterPath="$PROJECT_DIR$/src/com/expelabs/social/view/OAuthDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/social/vk/RequestCallback.java" afterPath="$PROJECT_DIR$/src/com/expelabs/social/vk/RequestCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/social/vk/RequestTask.java" afterPath="$PROJECT_DIR$/src/com/expelabs/social/vk/RequestTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/social/vk/VkAccess.java" afterPath="$PROJECT_DIR$/src/com/expelabs/social/vk/VkAccess.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw/lifestyle.csv" afterPath="$PROJECT_DIR$/res/raw/lifestyle.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tips.iml" afterPath="$PROJECT_DIR$/tips.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/settings_activity.xml" afterPath="$PROJECT_DIR$/res/layout/settings_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tips.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369832177338" ignored="false" />
+    <file path="/Dummy.txt" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369841195099" ignored="false" />
     <file path="/MainMenuActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369253090384" ignored="false" />
     <file path="/main_menu_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369320436189" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369687931255" ignored="false" />
@@ -66,14 +58,14 @@
     <file path="/Tip.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368729860846" ignored="false" />
     <file path="/DailyTipsApp.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369751557700" ignored="false" />
     <file path="/TipsPagerAdapter.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369747272533" ignored="false" />
-    <file path="/TipFragment.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369828792428" ignored="false" />
+    <file path="/TipFragment.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369841906842" ignored="false" />
     <file path="/strings.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369752044665" ignored="false" />
     <file path="/NavigationDelegate.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368733961933" ignored="false" />
     <file path="/CustomFontTextView.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368866785619" ignored="false" />
-    <file path="/AdditionalSettingsActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369753661167" ignored="false" />
+    <file path="/AdditionalSettingsActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369843952305" ignored="false" />
     <file path="/ShareProvider.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369144542344" ignored="false" />
     <file path="/ImageUtils.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369165694800" ignored="false" />
-    <file path="/settings_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369214191733" ignored="false" />
+    <file path="/settings_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369843307266" ignored="false" />
     <file path="$PROJECT_DIR$/../instadate/src/com/instadate/dto/DateAccount.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369222647629" ignored="false" />
     <file path="$PROJECT_DIR$/../instadate/src/com/instadate/activity/CommentActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369222647629" ignored="false" />
     <file path="$PROJECT_DIR$/../instadate/src/com/instadate/activity/DateInstActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369658341596" ignored="false" />
@@ -151,7 +143,7 @@
     <file path="$PROJECT_DIR$/../instarepost/res/layout/ads_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369394615966" ignored="false" />
     <file path="/ads_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369391257019" ignored="false" />
     <file path="/AuthActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369391323502" ignored="false" />
-    <file path="/OAuthDialog.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369830555056" ignored="false" />
+    <file path="/OAuthDialog.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369836312169" ignored="false" />
     <file path="/AuthClientInterface.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369394239161" ignored="false" />
     <file path="/VkAuthClient.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369830227278" ignored="false" />
     <file path="/AuthListener.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369399062657" ignored="false" />
@@ -231,6 +223,10 @@
     <file path="$PROJECT_DIR$/../../../instarepost_andr/res/layout/category_list_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369834166546" ignored="false" />
     <file path="$PROJECT_DIR$/../../../instarepost_andr/res/layout/user_media_grid_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369834214883" ignored="false" />
     <file path="$PROJECT_DIR$/../../../instarepost_andr/res/layout/user_media_list_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369834222400" ignored="false" />
+    <file path="/share_fb_selector.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369843061409" ignored="false" />
+    <file path="/share_vk_selector.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369843115261" ignored="false" />
+    <file path="/share_tw_selector.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369843186869" ignored="false" />
+    <file path="/share_email_selector.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369843232315" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +278,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" line="108" class="com.expelabs.tips.activity.AdditionalSettingsActivity" package="com.expelabs.tips.activity">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" line="130" class="com.expelabs.tips.activity.AdditionalSettingsActivity" package="com.expelabs.tips.activity">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -296,7 +292,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" line="99" class="com.expelabs.tips.activity.AdditionalSettingsActivity$3$1" package="com.expelabs.tips.activity">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" line="120" class="com.expelabs.tips.activity.AdditionalSettingsActivity$3$1" package="com.expelabs.tips.activity">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -311,20 +307,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" line="176" class="com.expelabs.tips.fragment.TipFragment" package="com.expelabs.tips.fragment">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" line="198" class="com.expelabs.tips.fragment.TipFragment$5" package="com.expelabs.tips.fragment">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -390,52 +372,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CategoryActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="23" selection-start="4601" selection-end="4601" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TipFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="236" column="0" selection-start="8985" selection-end="8985" vertical-scroll-proportion="0.0">
+            <state line="94" column="121" selection-start="2903" selection-end="3075" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5158#5166#0" expanded="true" />
+                <element signature="e#7029#7811#0" expanded="true" />
+                <element signature="e#7805#7806#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VkAccess.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/VkAccess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="65" selection-start="2774" selection-end="2774" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OAuthDialog.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/view/OAuthDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="54" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.27468583">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VkAuthClient.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/webclient/VkAuthClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="18" selection-start="520" selection-end="532" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -443,19 +387,81 @@
       <file leaf-file-name="AdditionalSettingsActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="76" selection-start="3112" selection-end="3112" vertical-scroll-proportion="0.0">
+            <state line="92" column="70" selection-start="3164" selection-end="3164" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#3227#3605#0" expanded="true" />
+                <element signature="e#3594#3595#0" expanded="true" />
+                <element signature="e#3663#5232#0" expanded="true" />
+                <element signature="e#5221#5222#0" expanded="true" />
+                <element signature="e#5295#5575#0" expanded="true" />
+                <element signature="e#5564#5565#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DailyTipsApp.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="75" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.6057907">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/RequestTask.java">
+      <file leaf-file-name="CategoryActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="28" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="1" column="64" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="share_fb_selector.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/drawable/share_fb_selector.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="36" selection-start="288" selection-end="288" vertical-scroll-proportion="-4.76">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="share_vk_selector.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/drawable/share_vk_selector.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="42" selection-start="277" selection-end="277" vertical-scroll-proportion="-4.08">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="share_tw_selector.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/drawable/share_tw_selector.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="52" selection-start="244" selection-end="244" vertical-scroll-proportion="-3.4">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="share_email_selector.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/drawable/share_email_selector.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="42" selection-start="283" selection-end="283" vertical-scroll-proportion="-4.08">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings_activity.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/settings_activity.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="42" selection-start="1468" selection-end="1468" vertical-scroll-proportion="-5.78">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -468,7 +474,7 @@
     </FindUsagesManager>
   </component>
   <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="C:\projects\tips\tips" />
+    <option name="KEY_STORE_PATH" value="C:\workspace\ExpeLabs\ExpeMobile\tips\tips" />
     <option name="KEY_ALIAS" value="tips" />
     <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
@@ -483,21 +489,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/settings_activity.xml" />
-        <option value="$PROJECT_DIR$/res/layout/tip_item.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/expelabs/tips/adapter/TipsPagerAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/expelabs/tips/util/BillingUtils.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java" />
         <option value="$PROJECT_DIR$/res/menu/category_menu.xml" />
         <option value="$PROJECT_DIR$/src/com/expelabs/social/vk/RequestCallback.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/social/vk/RequestTask.java" />
-        <option value="$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/social/vk/VkAccess.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/social/webclient/VkAuthClient.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/social/view/OAuthDialog.java" />
+        <option value="$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" />
+        <option value="$PROJECT_DIR$/res/drawable/share_fb_selector.xml" />
+        <option value="$PROJECT_DIR$/res/drawable/share_vk_selector.xml" />
+        <option value="$PROJECT_DIR$/res/drawable/share_tw_selector.xml" />
+        <option value="$PROJECT_DIR$/res/drawable/share_email_selector.xml" />
+        <option value="$PROJECT_DIR$/res/layout/settings_activity.xml" />
+        <option value="$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" />
       </list>
     </option>
@@ -800,46 +806,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -854,7 +828,7 @@
     <property name="options.lastSelected" value="preferences.sourceCode.Java" />
     <property name="recentsLimit" value="5" />
     <property name="ExportedModule" value="tips" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tips" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -1029,24 +1003,24 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.67199147" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18848759" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45598194" sideWeight="0.49786553" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4550321" sideWeight="0.49786553" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47629797" sideWeight="0.49839914" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38036117" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4785553" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3803419" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47751606" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5816777" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26307008" sideWeight="0.624197" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26307008" sideWeight="0.5449679" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.375803" sideWeight="0.4914621" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.6728972" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.6728972" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18848759" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1111,83 +1085,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/settings_activity.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="85" selection-start="862" selection-end="862" vertical-scroll-proportion="0.2712766" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main_menu_activity.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="66" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.02093596">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/raw/lifestyle.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="23" selection-start="4601" selection-end="4601" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/org/json/JSONObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="11" selection-start="7139" selection-end="7139" vertical-scroll-proportion="0.3328859">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/RequestCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="29" selection-start="278" selection-end="278" vertical-scroll-proportion="0.2738255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-16/android.jar!/org/apache/http/NameValuePair.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="162" selection-end="162" vertical-scroll-proportion="0.11409396">
-          <folding />
-        </state>
+        <state line="6" column="17" selection-start="162" selection-end="162" vertical-scroll-proportion="0.11409396" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-16/android.jar!/org/apache/http/message/BasicNameValuePair.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="64" selection-start="217" selection-end="217" vertical-scroll-proportion="0.11409396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="236" column="0" selection-start="8985" selection-end="8985" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5158#5166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/VkAccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="65" selection-start="2774" selection-end="2774" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="6" column="64" selection-start="217" selection-end="217" vertical-scroll-proportion="0.11409396" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/webclient/AuthClientInterface.java">
@@ -1197,39 +1102,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/VkAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="65" selection-start="2774" selection-end="2774" vertical-scroll-proportion="0.6020067">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/RequestTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="28" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="48" column="28" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.01868132">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/webclient/VkAuthClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="520" selection-end="532" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="76" selection-start="3112" selection-end="3112" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="65" selection-start="962" selection-end="962" vertical-scroll-proportion="0.3841912">
+        <state line="20" column="18" selection-start="520" selection-end="532" vertical-scroll-proportion="0.01868132">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/view/OAuthDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="54" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.27468583">
+        <state line="37" column="38" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.3923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/share_fb_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="36" selection-start="288" selection-end="288" vertical-scroll-proportion="-4.76">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/share_vk_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="42" selection-start="277" selection-end="277" vertical-scroll-proportion="-4.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/share_tw_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="52" selection-start="244" selection-end="244" vertical-scroll-proportion="-3.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/share_email_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="42" selection-start="283" selection-end="283" vertical-scroll-proportion="-4.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/settings_activity.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="42" selection-start="1468" selection-end="1468" vertical-scroll-proportion="-5.78">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="121" selection-start="2903" selection-end="3075" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#7029#7811#0" expanded="true" />
+            <element signature="e#7805#7806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="70" selection-start="3164" selection-end="3164" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#3227#3605#0" expanded="true" />
+            <element signature="e#3594#3595#0" expanded="true" />
+            <element signature="e#3663#5232#0" expanded="true" />
+            <element signature="e#5221#5222#0" expanded="true" />
+            <element signature="e#5295#5575#0" expanded="true" />
+            <element signature="e#5564#5565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="64" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="75" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.6057907">
           <folding />
         </state>
       </provider>

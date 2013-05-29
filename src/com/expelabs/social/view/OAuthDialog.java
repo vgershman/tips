@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.webkit.CacheManager;
 import android.webkit.CookieManager;
+import android.webkit.CookieSyncManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
@@ -32,9 +33,13 @@ public class OAuthDialog extends Dialog {
     public OAuthDialog(Context context, WebViewClient client) {
         super(context, android.R.style.Theme_NoTitleBar_Fullscreen);
 
-
         webView = new WebView(context);
-		CookieManager.getInstance().removeAllCookie();
+		webView.clearCache(true);
+		webView.clearSslPreferences();
+		CookieSyncManager.createInstance(context);
+		CookieManager cookieManager = CookieManager.getInstance();
+		cookieManager.removeAllCookie();
+
 				webView.setWebViewClient(client);
         webClient = client;
     }

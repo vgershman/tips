@@ -37,8 +37,8 @@ public class DailyTipsApp extends Application {
 
     private static BillingUtils billingUtils;
     private static Context appContext;
-    public static String HOSTING_BASE_URL = "http://alexeypetrov.com/";
-    public static String VK_APP_ID = "3679044";
+    public static String HOSTING_BASE_URL = "http://alexeypetrov.com/dailytip/";
+    public static String VK_APP_ID = "3679485";
     public static String VK_SCOPE = "wall,photos";
 
     @Override

@@ -179,44 +179,33 @@ public class TipFragment extends Fragment {
 			public void call(Session session, SessionState state, Exception exception) {
 			}
 		});
-		final List<String> PERMISSIONS = Arrays.asList("publish_actions");
 		if (session != null) {
-			// Check for publish permissions
-			List<String> permissions = session.getPermissions();
-			if (!permissions.contains(PERMISSIONS.get(0))) {
-				Session.NewPermissionsRequest newPermissionsRequest = new Session
-						.NewPermissionsRequest(this, PERMISSIONS);
-				session.requestNewPublishPermissions(newPermissionsRequest);
-				return;
-			}
 			Bundle postParams = new Bundle();
-			postParams.putString("name", tip.getText());
+			postParams.putString("name", getString(R.string.tip_tag) + " " + tip.getText());
 			postParams.putString("caption", tip.getTextItalic());
 			postParams.putString("link", getString(R.string.market));
 			postParams.putString("picture", DailyTipsApp.HOSTING_BASE_URL + "/" + tip.getCategoryName().toLowerCase() + "/" + tip.getId() + ".jpg");
 			Request.Callback callback = new Request.Callback() {
 				public void onCompleted(Response response) {
-					JSONObject graphResponse = response
-							.getGraphObject()
-							.getInnerJSONObject();
-					String postId = null;
 					try {
-						postId = graphResponse.getString("id");
-					} catch (JSONException e) {
-						Log.i("ES",
-								"JSON error " + e.getMessage());
-					}
-					FacebookRequestError error = response.getError();
-					if (error != null) {
-						Toast.makeText(getActivity()
-								.getApplicationContext(),
-								error.getErrorMessage(),
-								Toast.LENGTH_SHORT).show();
-					} else {
-						Toast.makeText(getActivity()
-								.getApplicationContext(),
-								postId,
-								Toast.LENGTH_LONG).show();
+						JSONObject graphResponse = response
+								.getGraphObject()
+								.getInnerJSONObject();
+						String postId = null;
+						try {
+							postId = graphResponse.getString("id");
+						} catch (JSONException e) {
+							Log.i("ES",
+									"JSON error " + e.getMessage());
+						}
+						FacebookRequestError error = response.getError();
+						if (error != null) {
+							Toast.makeText(getActivity(),"Something goes wrong",Toast.LENGTH_LONG).show();
+						} else {
+							Toast.makeText(getActivity(),"Success",Toast.LENGTH_LONG).show();
+						}
+					} catch (NullPointerException ex) {
+						Toast.makeText(getActivity(),"Something goes wrong",Toast.LENGTH_LONG).show();
 					}
 				}
 			};

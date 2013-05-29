@@ -29,6 +29,7 @@ import com.facebook.UiLifecycleHelper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 /**
@@ -39,6 +40,12 @@ import java.util.Map;
  * To change this template use File | Settings | File Templates.
  */
 public class AdditionalSettingsActivity extends SherlockActivity {
+
+
+	private ImageView shareVk;
+	private ImageView shareFb;
+	private ImageView shareTw;
+	private ImageView shareEmail;
 
     private ImageView buyTotal;
     private ImageView buyCooking;
@@ -72,11 +79,25 @@ public class AdditionalSettingsActivity extends SherlockActivity {
     }
 
     private void initShareComponents() {
+		shareFb = (ImageView)findViewById(R.id.share_facebook);
+		shareEmail = (ImageView)findViewById(R.id.share_email);
+		shareTw = (ImageView)findViewById(R.id.share_twitter);
+		shareVk = (ImageView)findViewById(R.id.share_vk);
+		Locale current = getResources().getConfiguration().locale;
+		int default_share = Share.FACEBOOK;
+		if (current.getCountry().equals("RU")) {
+			default_share = Share.VK;
+		}
+		int selected = getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).getInt("share",default_share);
+		selectButtons(selected);
+
+
         findViewById(R.id.share_facebook).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt("share", Share.FACEBOOK).commit();
                 Session.openActiveSession(AdditionalSettingsActivity.this,true,statusCallback);
+				selectButtons(Share.FACEBOOK);
             }
         });
         findViewById(R.id.share_vk).setOnClickListener(new View.OnClickListener() {
@@ -104,18 +125,21 @@ public class AdditionalSettingsActivity extends SherlockActivity {
                 oAuthDialog = new OAuthDialog(AdditionalSettingsActivity.this, vkAuthClient);
                 oAuthDialog.show();
                 getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt("share", Share.VK).commit();
+				selectButtons(Share.VK);
             }
         });
         findViewById(R.id.share_twitter).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt("share", Share.TWITTER).commit();
+				selectButtons(Share.TWITTER);
             }
         });
         findViewById(R.id.share_email).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, MODE_PRIVATE).edit().putInt("share", Share.EMAIL).commit();
+				selectButtons(Share.EMAIL);
             }
         });
     }
@@ -256,4 +280,17 @@ public class AdditionalSettingsActivity extends SherlockActivity {
         super.onPause();
         lifecycleHelper.onPause();
     }
+
+	private void selectButtons(int selected){
+		shareEmail.setSelected(false);
+		shareTw.setSelected(false);
+		shareVk.setSelected(false);
+		shareFb.setSelected(false);
+		switch (selected){
+			case Share.FACEBOOK : shareFb.setSelected(true);break;
+			case Share.VK : shareVk.setSelected(true);break;
+			case Share.TWITTER : shareTw.setSelected(true);break;
+			case Share.EMAIL : shareEmail.setSelected(true);break;
+		}
+	}
 }

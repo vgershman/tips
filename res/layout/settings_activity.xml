@@ -31,7 +31,7 @@
                    android:scaleType="fitCenter"
                    android:padding="2.5dp"
                    android:id="@+id/share_facebook"
-                   android:src="@drawable/share_fb"/>
+                   android:src="@drawable/share_fb_selector"/>
         <ImageView android:layout_height="wrap_content"
                    android:layout_width="0dp"
                    android:layout_weight="1"
@@ -39,7 +39,7 @@
                    android:scaleType="fitCenter"
                    android:padding="2.5dp"
                    android:id="@+id/share_vk"
-                   android:src="@drawable/share_vk"/>
+                   android:src="@drawable/share_vk_selector"/>
         <ImageView android:layout_height="wrap_content"
                    android:layout_width="0dp"
                    android:layout_weight="1"
@@ -47,7 +47,7 @@
                    android:scaleType="fitCenter"
                    android:padding="2.5dp"
                    android:id="@+id/share_twitter"
-                   android:src="@drawable/share_twit"/>
+                   android:src="@drawable/share_tw_selector"/>
         <ImageView android:layout_height="wrap_content"
                    android:layout_width="0dp"
                    android:layout_weight="1"
@@ -55,7 +55,7 @@
                    android:scaleType="fitCenter"
                    android:padding="2.5dp"
                    android:id="@+id/share_email"
-                   android:src="@drawable/share_email"/>
+                   android:src="@drawable/share_email_selector"/>
             </LinearLayout>
     <LinearLayout android:layout_width="fill_parent"
                   android:layout_height="wrap_content"
