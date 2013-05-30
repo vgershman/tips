@@ -27,15 +27,15 @@ public class VkAuthClient extends WebViewClient implements AuthClientInterface {
     @Override
     public String loginUrl() {
         return (VK_AUTH_URI + "\n" +
-                " client_id=" + clientId  + "&\n" +
-                " scope=" + scope + "&\n" +
-                " redirect_uri=" + VK_REDIRECT_URI + "&\n" +
-                " display=" + VK_DISPLAY + "& \n" +
-                " response_type=" + VK_RESPONSE_TYPE);
+                "client_id=" + clientId  + "&\n" +
+                "scope=" + scope + "&\n" +
+                "redirect_uri=" + VK_REDIRECT_URI + "&\n" +
+                "display=" + VK_DISPLAY + "& \n" +
+                "response_type=" + VK_RESPONSE_TYPE);
     }
 
     static final String VK_AUTH_URI="https://oauth.vk.com/authorize?";
-   public static final String VK_REDIRECT_URI="http://api.vkontakte.ru/blank.html";
+    public static final String VK_REDIRECT_URI="http://api.vk.com/blank.html";
     static final String VK_DISPLAY="touch";
     static final String VK_RESPONSE_TYPE="token";
 
