@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ResolveInfo;
+import android.content.res.AssetFileDescriptor;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
@@ -33,8 +34,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -220,9 +224,28 @@ public class TipFragment extends Fragment {
 		String uid = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, Context.MODE_PRIVATE).getString("VkUserId", "");
 		String accessToken = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, Context.MODE_PRIVATE).getString("VkAccessToken", "");
 		if (!uid.equals("") && !accessToken.equals("")) {
-			File file = new File("file://android_asset/tipsImages/" + tip.getCategoryName().toLowerCase() + "/" + tip.getId() + ".jpg");
+
+			File f = new File(getActivity().getCacheDir()+"/temp");
+			InputStream is = null;
+			try {
+				is = getActivity().getAssets().open("tipsImages/"+tip.getCategoryName().toLowerCase()+"/"+tip.getId()+".jpg");
+				int size = is.available();
+				byte[] buffer = new byte[size];
+				is.read(buffer);
+				is.close();
+
+
+				FileOutputStream fos = new FileOutputStream(f);
+				fos.write(buffer);
+				fos.close();
+			} catch (IOException e) {
+				e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+			}
+
+
+			//File file = new File(URI.create(DailyTipsApp.HOSTING_BASE_URL + tip.getCategoryName().toLowerCase() + "/" + tip.getId() + ".jpg"));
 			VkAccess.post("#советы" + '\n' + tip.getText() + '\n' + tip.getTextItalic() + '\n' + tip.getId() + ".jpg",
-					getString(R.string.market), file, uid, accessToken, new RequestCallback() {
+					getString(R.string.market), f, uid, accessToken, new RequestCallback() {
 
 				@Override
 				public void onSuccess(JSONObject response) {

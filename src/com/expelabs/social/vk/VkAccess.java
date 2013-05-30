@@ -24,7 +24,11 @@ public class VkAccess {
 			@Override
 			public void onSuccess(JSONObject response) {
 				if (response != null) {
-					String uploadUrl = response.optString("upload_url");
+					JSONObject responseObj = response.optJSONObject("response");
+					String uploadUrl = null;
+					if(responseObj!=null){
+						uploadUrl = responseObj.optString("upload_url");
+					}
 					if (uploadUrl != null) {
 						uploadPhoto(uploadUrl, photo, new RequestCallback() {
 							@Override
@@ -97,7 +101,7 @@ public class VkAccess {
 
 	public static void saveWallPhoto(String server, String photo, String hash, String uid, String token, RequestCallback callback) {
 		String requestUrl = VK_METHOD_BASE + "photos.saveWallPhoto?uid=<uid>&access_token=<ac>&server=<server>&photo=<photo>&hash=<hash>"
-				.replace("<uid>", uid).replace("<token>", token).replace("<server>", server).replace("<photo>", photo).replace("<hash>", hash);
+				.replace("<uid>", uid).replace("<ac>", token).replace("<server>", server).replace("<photo>", photo).replace("<hash>", hash);
 		new RequestTask(false, requestUrl, null, callback).execute();
 	}
 }
