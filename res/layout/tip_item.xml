@@ -1,82 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:custom="http://schemas.android.com/apk/res/com.expelabs.tips"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-        >
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:paddingBottom="5dp"
-            >
 
-        <FrameLayout
-                android:layout_height="wrap_content"
-                android:layout_width="fill_parent">
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:custom="http://schemas.android.com/apk/res/com.expelabs.tips"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingBottom="5dp"
+		android:orientation="vertical"
+		>
 
-            <ImageView
-                    android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
-                    android:layout_marginTop="7dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:id="@+id/tip_image"
-                    android:adjustViewBounds="true"
-                    android:scaleType="fitCenter"/>
+	<FrameLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
 
-            <LinearLayout
-                    android:layout_height="0dp"
-                    android:layout_width="fill_parent"
-                    android:orientation="horizontal">
+		<ImageView
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_marginTop="7dp"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:id="@+id/tip_image"
+				android:adjustViewBounds="true"
+				android:scaleType="fitCenter"/>
 
-                <FrameLayout
-                        android:layout_height="fill_parent"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:background="#0000"
-                        android:id="@+id/left_btn"/>
+		<LinearLayout
+				android:layout_height="0dp"
+				android:layout_width="fill_parent"
+				android:orientation="horizontal">
 
-                <FrameLayout
-                        android:layout_height="fill_parent"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:background="#0000"
-                        android:id="@+id/right_btn"/>
+			<FrameLayout
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:background="#0000"
+					android:id="@+id/left_btn"/>
 
-            </LinearLayout>
+			<FrameLayout
+					android:layout_height="fill_parent"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:background="#0000"
+					android:id="@+id/right_btn"/>
 
-            <ImageView
-                    android:layout_height="50dp"
-                    android:layout_width="50dp"
-                    android:id="@+id/social_button"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:layout_gravity="right|bottom"/>
-        </FrameLayout>
+		</LinearLayout>
 
-        <com.expelabs.tips.view.CustomFontTextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="25dp"
-                android:textColor="@android:color/black"
-                android:textSize="22sp"
-                custom:customFont="fonts/Roboto-Regular.ttf"
-                android:id="@+id/tip_text"/>
+		<ImageView
+				android:layout_height="50dp"
+				android:layout_width="50dp"
+				android:id="@+id/social_button"
+				android:layout_marginRight="20dp"
+				android:layout_marginBottom="20dp"
+				android:layout_gravity="right|bottom"/>
+	</FrameLayout>
+	<LinearLayout android:layout_height="0dp"
+				  android:layout_width="fill_parent"
+				  android:layout_weight="1"
+				  android:orientation="vertical"
+				  android:gravity="center_vertical">
 
-        <com.expelabs.tips.view.CustomFontTextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="22sp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="25dp"
-                android:textColor="@android:color/black"
-                android:layout_marginLeft="20dp"
-                custom:customFont="fonts/Roboto-ThinItalic.ttf"
-                android:id="@+id/tip_text_ital"
-                />
+		<com.expelabs.tips.view.CustomFontTextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="20dp"
 
-    </LinearLayout>
-</ScrollView>
+				android:textColor="@android:color/black"
+				android:textSize="18sp"
+				custom:customFont="fonts/Roboto-Regular.ttf"
+				android:id="@+id/tip_text"/>
+
+		<com.expelabs.tips.view.CustomFontTextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="18sp"
+				android:layout_marginRight="20dp"
+				android:layout_marginTop="20dp"
+				android:textColor="@android:color/black"
+				android:layout_marginLeft="20dp"
+				custom:customFont="fonts/Roboto-ThinItalic.ttf"
+				android:id="@+id/tip_text_ital"
+				/>
+	</LinearLayout>
+</LinearLayout>

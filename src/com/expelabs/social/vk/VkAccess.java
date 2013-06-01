@@ -43,13 +43,16 @@ public class VkAccess {
 											public void onSuccess(JSONObject response) {
 												if(response!=null){
 													String id = response.optString("id");
-													if(id!=null){
+													if(id!=null && !id.isEmpty()){
 														String attachments = id + "," + link;
 														final String requestUrl = VK_METHOD_BASE + "wall.post?uid=<uid>&access_token=<ac>&message=<message>&attachments=<at>"
-																.replace("<uid>", uid).replace("<ac>", token).replace("<message>", URLEncoder.encode(content).replace("<at>",attachments));
-														new RequestTask(false,requestUrl,null,requestCallback);
+																.replace("<uid>", uid).replace("<ac>", token).replace("<message>", URLEncoder.encode(content)).replace("<at>",attachments);
+														new RequestTask(false,requestUrl,null,requestCallback).execute();
 													}else {
-														requestCallback.onFailure();
+														String attachments = link;
+														final String requestUrl = VK_METHOD_BASE + "wall.post?uid=<uid>&access_token=<ac>&message=<message>&attachments=<at>"
+																.replace("<uid>", uid).replace("<ac>", token).replace("<message>", URLEncoder.encode(content)).replace("<at>",attachments);
+														new RequestTask(false,requestUrl,null,requestCallback).execute();
 													}
 												}else {
 													requestCallback.onFailure();

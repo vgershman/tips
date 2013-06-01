@@ -3,6 +3,7 @@ package com.expelabs.tips.fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.AssetFileDescriptor;
 import android.graphics.BitmapFactory;
@@ -141,29 +142,53 @@ public class TipFragment extends Fragment {
 	}
 
 	private void shareEmail() {
-		Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
-		emailIntent.setType("text/image");
-		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "See Nice Tip");
+		final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+		emailIntent.setType("text/plain");
+		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.tip_tag));
 		emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, tip.getText() + "\n" + tip.getTextItalic());
-		emailIntent.putExtra(Intent.EXTRA_STREAM,
-				Uri.parse(DailyTipsApp.HOSTING_BASE_URL + "/" + tip.getCategoryName().toLowerCase() + "/" + tip.getId() + ".jpg"));
-		startActivity(Intent.createChooser(emailIntent, "Share"));
+		try {
+			emailIntent.putExtra(Intent.EXTRA_STREAM,
+					Uri.fromFile(new File(ImageUtils.writeImageToFile(BitmapFactory.decodeStream(getActivity().getAssets()
+							.open("tipsImages/" + tip.getCategoryName() + "/" + tip.getId() + ".jpg")), "image"))));
+		} catch (IOException e) {
+			return;
+		}
+		final PackageManager pm = getActivity().getPackageManager();
+		final List<ResolveInfo> matches = pm.queryIntentActivities(emailIntent, 0);
+		ResolveInfo best = null;
+		for (final ResolveInfo info : matches)
+			if (info.activityInfo.packageName.endsWith(".gm") ||
+					info.activityInfo.name.toLowerCase().contains("gmail")) best = info;
+		if (best != null)
+			emailIntent.setClassName(best.activityInfo.packageName, best.activityInfo.name);
+		startActivity(emailIntent);
 	}
 
 	private void shareTwitter() {
+
 		List<Intent> targetedShareIntents = new ArrayList<Intent>();
 		Intent share = new Intent(android.content.Intent.ACTION_SEND);
-		share.setType("image/jpeg");
+		share.setType("text/plain");
 		List<ResolveInfo> resInfo = getActivity().getPackageManager().queryIntentActivities(share, 0);
 		if (!resInfo.isEmpty()) {
 			for (ResolveInfo info : resInfo) {
 				Intent targetedShare = new Intent(android.content.Intent.ACTION_SEND);
-				targetedShare.setType("image/jpeg");
+				targetedShare.setType("text/plain");
 				if (info.activityInfo.packageName.toLowerCase().contains("twi") ||
 						info.activityInfo.name.toLowerCase().contains("twi")) {
-					targetedShare.putExtra(Intent.EXTRA_TEXT, tip.getText() + "\n" + tip.getTextItalic());
+					String text = getString(R.string.tip_tag).replace("#","@") + " "+ tip.getText();
+					if(text.length() > 118){
+						text = text.substring(0,118);
+					}
+					targetedShare.putExtra(Intent.EXTRA_TEXT, text);
+					try {
 					targetedShare.putExtra(Intent.EXTRA_STREAM,
-							Uri.parse(DailyTipsApp.HOSTING_BASE_URL + "/" + tip.getCategoryName().toLowerCase() + "/" + tip.getId() + ".jpg"));
+							Uri.fromFile(new File(ImageUtils.writeImageToFile(BitmapFactory.decodeStream(getActivity().getAssets()
+									.open("tipsImages/" + tip.getCategoryName() + "/" + tip.getId() + ".jpg")), "image"))));
+				} catch (IOException e) {
+					return;
+				}
+
 					targetedShare.setPackage(info.activityInfo.packageName);
 					targetedShareIntents.add(targetedShare);
 				}
@@ -204,12 +229,12 @@ public class TipFragment extends Fragment {
 						}
 						FacebookRequestError error = response.getError();
 						if (error != null) {
-							Toast.makeText(getActivity(),"Something goes wrong",Toast.LENGTH_LONG).show();
+							Toast.makeText(getActivity(), "Something goes wrong", Toast.LENGTH_LONG).show();
 						} else {
-							Toast.makeText(getActivity(),"Success",Toast.LENGTH_LONG).show();
+							Toast.makeText(getActivity(), "Success", Toast.LENGTH_LONG).show();
 						}
 					} catch (NullPointerException ex) {
-						Toast.makeText(getActivity(),"Something goes wrong",Toast.LENGTH_LONG).show();
+						Toast.makeText(getActivity(), "Something goes wrong", Toast.LENGTH_LONG).show();
 					}
 				}
 			};
@@ -224,27 +249,15 @@ public class TipFragment extends Fragment {
 		String uid = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, Context.MODE_PRIVATE).getString("VkUserId", "");
 		String accessToken = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, Context.MODE_PRIVATE).getString("VkAccessToken", "");
 		if (!uid.equals("") && !accessToken.equals("")) {
-
-			File f = new File(getActivity().getCacheDir()+"/temp");
-			InputStream is = null;
+			File f = null;
 			try {
-				is = getActivity().getAssets().open("tipsImages/"+tip.getCategoryName().toLowerCase()+"/"+tip.getId()+".jpg");
-				int size = is.available();
-				byte[] buffer = new byte[size];
-				is.read(buffer);
-				is.close();
-
-
-				FileOutputStream fos = new FileOutputStream(f);
-				fos.write(buffer);
-				fos.close();
+				f = new File(ImageUtils.writeImageToFile(BitmapFactory.decodeStream(getActivity().getAssets()
+						.open("tipsImages/" + tip.getCategoryName() + "/" + tip.getId() + ".jpg")), "image"));
 			} catch (IOException e) {
 				e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
 			}
-
-
 			//File file = new File(URI.create(DailyTipsApp.HOSTING_BASE_URL + tip.getCategoryName().toLowerCase() + "/" + tip.getId() + ".jpg"));
-			VkAccess.post("#советы" + '\n' + tip.getText() + '\n' + tip.getTextItalic() + '\n' + tip.getId() + ".jpg",
+			VkAccess.post(getString(R.string.tip_tag) + '\n' + tip.getText() + '\n' + tip.getTextItalic(),
 					getString(R.string.market), f, uid, accessToken, new RequestCallback() {
 
 				@Override

@@ -30,33 +30,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/social/view/OAuthDialog.java" afterPath="$PROJECT_DIR$/src/com/expelabs/social/view/OAuthDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/social/vk/VkAccess.java" afterPath="$PROJECT_DIR$/src/com/expelabs/social/vk/VkAccess.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/social/webclient/VkAuthClient.java" afterPath="$PROJECT_DIR$/src/com/expelabs/social/webclient/VkAuthClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/tip_item.xml" afterPath="$PROJECT_DIR$/res/layout/tip_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tips.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369934870134" ignored="false" />
+    <file path="/Dummy.txt" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1370081944223" ignored="false" />
     <file path="/MainMenuActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369253090384" ignored="false" />
     <file path="/main_menu_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369320436189" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369687931255" ignored="false" />
     <file path="/Category.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368556201984" ignored="false" />
-    <file path="/CategoryActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369764375313" ignored="false" />
+    <file path="/CategoryActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1370116049058" ignored="false" />
     <file path="/category_menu.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369766997163" ignored="false" />
-    <file path="/fragment.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369936464183" ignored="false" />
+    <file path="/fragment.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1370092032077" ignored="false" />
     <file path="/category_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368867467840" ignored="false" />
-    <file path="/tip_item.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369322318062" ignored="false" />
+    <file path="/tip_item.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1370083972088" ignored="false" />
     <file path="/TipPagerAdapter.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368558177378" ignored="false" />
     <file path="/Tip.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368729860846" ignored="false" />
-    <file path="/DailyTipsApp.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369751557700" ignored="false" />
+    <file path="/DailyTipsApp.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1370098520236" ignored="false" />
     <file path="/TipsPagerAdapter.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369747272533" ignored="false" />
-    <file path="/TipFragment.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369938620094" ignored="false" />
+    <file path="/TipFragment.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1370114255108" ignored="false" />
     <file path="/strings.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369752044665" ignored="false" />
     <file path="/NavigationDelegate.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368733961933" ignored="false" />
     <file path="/CustomFontTextView.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1368866785619" ignored="false" />
-    <file path="/AdditionalSettingsActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369843952305" ignored="false" />
+    <file path="/AdditionalSettingsActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1370085960029" ignored="false" />
     <file path="/ShareProvider.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369144542344" ignored="false" />
     <file path="/ImageUtils.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369165694800" ignored="false" />
     <file path="/settings_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369843307266" ignored="false" />
@@ -141,7 +143,7 @@
     <file path="/AuthClientInterface.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369394239161" ignored="false" />
     <file path="/VkAuthClient.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369830227278" ignored="false" />
     <file path="/AuthListener.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369399062657" ignored="false" />
-    <file path="/VkAccess.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369936601455" ignored="false" />
+    <file path="/VkAccess.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1370114483192" ignored="false" />
     <file path="/RequestTask.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369827199359" ignored="false" />
     <file path="/RequestCallback.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369823374926" ignored="false" />
     <file path="$PROJECT_DIR$/../instarepost/res/layout/feed_grid_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369401722000" ignored="false" />
@@ -235,7 +237,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
@@ -272,7 +273,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" line="130" class="com.expelabs.tips.activity.AdditionalSettingsActivity" package="com.expelabs.tips.activity">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" line="119" class="com.expelabs.tips.activity.AdditionalSettingsActivity$3$1" package="com.expelabs.tips.activity">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -286,21 +287,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" line="120" class="com.expelabs.tips.activity.AdditionalSettingsActivity$3$1" package="com.expelabs.tips.activity">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" line="180" class="com.expelabs.tips.fragment.TipFragment" package="com.expelabs.tips.fragment">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" line="205" class="com.expelabs.tips.fragment.TipFragment" package="com.expelabs.tips.fragment">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -342,7 +329,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" line="263" class="com.expelabs.tips.fragment.TipFragment$7" package="com.expelabs.tips.fragment">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" line="276" class="com.expelabs.tips.fragment.TipFragment$7" package="com.expelabs.tips.fragment">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -356,7 +343,35 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/social/vk/RequestTask.java" line="71" class="com.expelabs.social.vk.RequestTask" package="com.expelabs.social.vk">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" line="178" class="com.expelabs.tips.fragment.TipFragment" package="com.expelabs.tips.fragment">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" line="144" class="com.expelabs.tips.fragment.TipFragment" package="com.expelabs.tips.fragment">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" line="85" class="com.expelabs.tips.fragment.TipFragment$1" package="com.expelabs.tips.fragment">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -371,6 +386,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -380,82 +396,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TipFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="225" column="0" selection-start="8424" selection-end="8424" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="File.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/java/io/File.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="17" selection-start="6366" selection-end="6366" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="URI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/java/net/URI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="19" selection-start="9386" selection-end="9386" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VkAccess.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/VkAccess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="16" selection-start="3189" selection-end="3189" vertical-scroll-proportion="-7.6">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestTask.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/RequestTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="0" selection-start="2989" selection-end="2989" vertical-scroll-proportion="0.36645964">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdditionalSettingsActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="70" selection-start="3164" selection-end="3164" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DailyTipsApp.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="97" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="0" selection-start="3526" selection-end="3526" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings_activity.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings_activity.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/layout/settings_activity.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="42" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.0">
+            <state line="31" column="42" selection-start="1468" selection-end="1468" vertical-scroll-proportion="-1.2666667">
               <folding />
             </state>
           </provider>
@@ -487,8 +431,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java" />
         <option value="$PROJECT_DIR$/res/menu/category_menu.xml" />
         <option value="$PROJECT_DIR$/src/com/expelabs/social/vk/RequestCallback.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/social/vk/RequestTask.java" />
@@ -497,12 +439,14 @@
         <option value="$PROJECT_DIR$/res/drawable/share_tw_selector.xml" />
         <option value="$PROJECT_DIR$/res/drawable/share_email_selector.xml" />
         <option value="$PROJECT_DIR$/res/layout/settings_activity.xml" />
-        <option value="$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/social/view/OAuthDialog.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/social/webclient/VkAuthClient.java" />
+        <option value="$PROJECT_DIR$/res/layout/tip_item.xml" />
+        <option value="$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/social/vk/VkAccess.java" />
+        <option value="$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java" />
       </list>
     </option>
   </component>
@@ -574,212 +518,6 @@
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expelabs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expelabs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fragment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expelabs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expelabs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expelabs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expelabs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expelabs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -805,47 +543,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tipsImages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tipsImages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1037,26 +739,26 @@
     <frame x="67" y="-9" width="1862" height="1098" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869855" sideWeight="0.6728972" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869855" sideWeight="0.6728972" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.67199147" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906458" sideWeight="0.47430408" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4550321" sideWeight="0.49786553" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3169165" sideWeight="0.49786553" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47629797" sideWeight="0.49839914" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38008565" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45717344" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5149893" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5816777" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2647386" sideWeight="0.5449679" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.375803" sideWeight="0.4914621" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.6728972" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26447663" sideWeight="0.7077088" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29229122" sideWeight="0.4914621" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.6728972" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18848759" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1123,9 +825,47 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/settings_activity.xml">
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/android/content/ContextWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="42" selection-start="1468" selection-end="1468" vertical-scroll-proportion="0.0">
+        <state line="73" column="24" selection-start="2319" selection-end="2319" vertical-scroll-proportion="0.3326087" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/android/content/res/AssetFileDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="26" selection-start="2856" selection-end="2856" vertical-scroll-proportion="0.3326087" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/java/net/URI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="19" selection-start="9386" selection-end="9386" vertical-scroll-proportion="0.03269231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="17" selection-start="6366" selection-end="6366" vertical-scroll-proportion="0.031894933">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/android/content/Intent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1017" column="31" selection-start="49010" selection-end="49010" vertical-scroll-proportion="0.33228347">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/RequestCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="9" selection-start="299" selection-end="299" vertical-scroll-proportion="0.47939262">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/tip_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="32" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.91008174">
           <folding />
         </state>
       </provider>
@@ -1133,109 +873,118 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1408" column="19" selection-start="52411" selection-end="52411" vertical-scroll-proportion="0.66450214">
-          <folding />
+        <state line="129" column="0" selection-start="4741" selection-end="4741" vertical-scroll-proportion="0.33333334">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1830#1838#0" expanded="true" />
+            <element signature="e#2140#2447#0" expanded="true" />
+            <element signature="e#2442#2443#0" expanded="true" />
+            <element signature="e#3157#3480#0" expanded="true" />
+            <element signature="e#3475#3476#0" expanded="true" />
+            <element signature="e#3532#4738#0" expanded="true" />
+            <element signature="e#4733#4734#0" expanded="true" />
+            <element signature="e#4795#5911#0" expanded="true" />
+            <element signature="e#5330#5487#0" expanded="true" />
+            <element signature="e#5479#5480#0" expanded="true" />
+            <element signature="e#5528#5864#0" expanded="true" />
+            <element signature="e#5856#5857#0" expanded="true" />
+            <element signature="e#5906#5907#0" expanded="true" />
+            <element signature="e#5966#6197#0" expanded="true" />
+            <element signature="e#6192#6193#0" expanded="true" />
+            <element signature="e#6725#7018#0" expanded="true" />
+            <element signature="e#6896#7007#0" expanded="true" />
+            <element signature="e#7000#7001#0" expanded="true" />
+            <element signature="e#7013#7014#0" expanded="true" />
+            <element signature="e#7111#7406#0" expanded="true" />
+            <element signature="e#7284#7395#0" expanded="true" />
+            <element signature="e#7388#7389#0" expanded="true" />
+            <element signature="e#7401#7402#0" expanded="true" />
+            <element signature="e#7490#7782#0" expanded="true" />
+            <element signature="e#7660#7771#0" expanded="true" />
+            <element signature="e#7764#7765#0" expanded="true" />
+            <element signature="e#7777#7778#0" expanded="true" />
+            <element signature="e#7866#8158#0" expanded="true" />
+            <element signature="e#8036#8147#0" expanded="true" />
+            <element signature="e#8140#8141#0" expanded="true" />
+            <element signature="e#8153#8154#0" expanded="true" />
+            <element signature="e#8252#8549#0" expanded="true" />
+            <element signature="e#8427#8538#0" expanded="true" />
+            <element signature="e#8531#8532#0" expanded="true" />
+            <element signature="e#8544#8545#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="0" selection-start="3526" selection-end="3526" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="179" column="20" selection-start="5315" selection-end="5339" vertical-scroll-proportion="0.33228347">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java">
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/util/ImageUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="97" selection-start="1932" selection-end="1932" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/webclient/VkAuthClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="35" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/view/OAuthDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.7301762">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/webclient/AuthListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="0.20594713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="70" selection-start="3164" selection-end="3164" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/java/net/URI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="19" selection-start="9386" selection-end="9386" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="17" selection-start="6366" selection-end="6366" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/httpmime-4.2.1.jar!/org/apache/http/entity/mime/content/FileBody.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="745" selection-end="745" vertical-scroll-proportion="0.35172415">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/android/content/ContextWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="24" selection-start="2319" selection-end="2319" vertical-scroll-proportion="0.3326087">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-16/android/content/res/AssetFileDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="26" selection-start="2856" selection-end="2856" vertical-scroll-proportion="0.3326087">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="225" column="0" selection-start="8424" selection-end="8424" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/VkAccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="16" selection-start="3189" selection-end="3189" vertical-scroll-proportion="-7.6">
+        <state line="18" column="25" selection-start="434" selection-end="434" vertical-scroll-proportion="0.16062993">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/RequestTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="2989" selection-end="2989" vertical-scroll-proportion="0.36645964">
+        <state line="71" column="0" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.61732286">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="38" selection-start="1784" selection-end="1784" vertical-scroll-proportion="-1.8692913">
+          <folding>
+            <element signature="e#2710#2826#0" expanded="true" />
+            <element signature="e#2821#2822#0" expanded="true" />
+            <element signature="e#5897#5905#0" expanded="true" />
+            <element signature="e#8035#8823#0" expanded="true" />
+            <element signature="e#8817#8818#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/VkAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="0" selection-start="2596" selection-end="2596" vertical-scroll-proportion="0.57877815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="80" selection-start="698" selection-end="752" vertical-scroll-proportion="0.3622951">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="68" selection-start="935" selection-end="935" vertical-scroll-proportion="-1.607717">
+          <folding>
+            <element signature="e#5017#5551#0" expanded="true" />
+            <element signature="e#5532#5533#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/settings_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="42" selection-start="1468" selection-end="1468" vertical-scroll-proportion="-1.2666667">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
