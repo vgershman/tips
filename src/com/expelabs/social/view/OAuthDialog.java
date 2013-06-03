@@ -34,12 +34,6 @@ public class OAuthDialog extends Dialog {
         super(context, android.R.style.Theme_NoTitleBar_Fullscreen);
 
         webView = new WebView(context);
-	/*	webView.clearCache(true);
-		webView.clearSslPreferences();
-		CookieSyncManager.createInstance(context);
-		CookieManager cookieManager = CookieManager.getInstance();
-		cookieManager.removeAllCookie();
-      */
 		webView.setWebViewClient(client);
         webClient = client;
     }

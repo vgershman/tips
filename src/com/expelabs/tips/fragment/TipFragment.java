@@ -197,7 +197,7 @@ public class TipFragment extends Fragment {
 		if (targetedShareIntents.size() == 0) {
 			return;
 		}
-		Intent chooserIntent = Intent.createChooser(targetedShareIntents.remove(0), "Select app to share");
+		Intent chooserIntent = Intent.createChooser(targetedShareIntents.remove(0), getString(R.string.share_select_ac));
 		chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, targetedShareIntents.toArray(new Parcelable[]{}));
 		startActivity(chooserIntent);
 	}
@@ -229,12 +229,12 @@ public class TipFragment extends Fragment {
 						}
 						FacebookRequestError error = response.getError();
 						if (error != null) {
-							Toast.makeText(getActivity(), "Something goes wrong", Toast.LENGTH_LONG).show();
+							Toast.makeText(getActivity(), getString(R.string.share_error), Toast.LENGTH_LONG).show();
 						} else {
-							Toast.makeText(getActivity(), "Success", Toast.LENGTH_LONG).show();
+							Toast.makeText(getActivity(), getString(R.string.share_success), Toast.LENGTH_LONG).show();
 						}
 					} catch (NullPointerException ex) {
-						Toast.makeText(getActivity(), "Something goes wrong", Toast.LENGTH_LONG).show();
+						Toast.makeText(getActivity(), getString(R.string.share_error), Toast.LENGTH_LONG).show();
 					}
 				}
 			};
@@ -262,12 +262,12 @@ public class TipFragment extends Fragment {
 
 				@Override
 				public void onSuccess(JSONObject response) {
-					Toast.makeText(getActivity(), "Success", Toast.LENGTH_LONG).show();
+					Toast.makeText(getActivity(), getString(R.string.share_success), Toast.LENGTH_LONG).show();
 				}
 
 				@Override
 				public void onFailure() {
-					Toast.makeText(getActivity(), "Error", Toast.LENGTH_LONG).show();
+					Toast.makeText(getActivity(), getString(R.string.share_error), Toast.LENGTH_LONG).show();
 				}
 			});
 		} else {
@@ -287,7 +287,7 @@ public class TipFragment extends Fragment {
 
 				@Override
 				public void onError() {
-					Toast.makeText(getActivity(), "Error", Toast.LENGTH_LONG).show();
+					Toast.makeText(getActivity(), getString(R.string.share_error), Toast.LENGTH_LONG).show();
 					oAuthDialog.dismiss();
 				}
 			});

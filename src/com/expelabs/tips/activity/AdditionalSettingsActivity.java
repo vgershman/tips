@@ -135,15 +135,15 @@ public class AdditionalSettingsActivity extends SherlockActivity {
 					selectButtons(Share.TWITTER);
 				} else {
 					AlertDialog.Builder builder = new AlertDialog.Builder(AdditionalSettingsActivity.this);
-					builder.setTitle("Twitter App is missing");
-					builder.setMessage("Do you want to install?");
-					builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+					builder.setTitle(getString(R.string.twitter_miss));
+					builder.setMessage(getString(R.string.twitter_install));
+					builder.setNegativeButton(getString(R.string.more_no), new DialogInterface.OnClickListener() {
 						@Override
 						public void onClick(DialogInterface dialog, int which) {
 							dialog.cancel();
 						}
 					});
-					builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+					builder.setPositiveButton(getString(R.string.more_yes), new DialogInterface.OnClickListener() {
 						@Override
 						public void onClick(DialogInterface dialog, int which) {
 							final Intent market = new Intent(Intent.ACTION_VIEW,

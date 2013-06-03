@@ -8,7 +8,7 @@
     <string name="category_random">Random</string>
     <string name="additional_settings_title">Additional Settings</string>
     <string name="choose_share">Choose preferred sharing service</string>
-    <string name="more_tips">Want more tips?</string>
+    <string name="more_tips">Want more daily tips?</string>
     <string name="app_num">146730642180542</string>
     <string name="share_select_ac">Select app to share</string>
     <string name="market">http://market.android.com/details?id=com.expelabs.tips</string>
@@ -19,4 +19,8 @@
     <string name="more_no">No</string>
     <string name="more_yes">Yes</string>
 	<string name="tip_tag">#tips</string>
+	<string name="twitter_miss">Twitter App is missing</string>
+	<string name="twitter_install">Do you want to install?</string>
+	<string name="share_error">Something went wrong</string>
+	<string name="share_success">Success</string>
 </resources>

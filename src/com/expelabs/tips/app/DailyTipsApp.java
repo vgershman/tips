@@ -101,7 +101,7 @@ public class DailyTipsApp extends Application {
                 builder.create().show();
             }
         }
-        if(scrollngCounter % 20 ==0){
+        if(scrollngCounter % 40 ==0){
             if(!appContext.getSharedPreferences(PREFERENCES_NAME,MODE_PRIVATE).getBoolean("rate", false)){
                 AlertDialog.Builder builder = new AlertDialog.Builder(appContext);
                 builder.setMessage(appContext.getString(R.string.rate_app_dial));

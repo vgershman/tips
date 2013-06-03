@@ -5,6 +5,20 @@
     <string name="category_work">Работа</string>
     <string name="category_lifestyle">Стиль жизни</string>
     <string name="additional_settings_title">Настройки</string>
-    <string name="choose_share">Выберите способ поделеиться</string>
-    <string name="more_tips">Больше советов?</string>
+    <string name="choose_share">Выберите способ поделиться:</string>
+    <string name="more_tips">Хотите еще больше полезных советов?</string>
+	<string name="app_name">Полезные советы</string>
+	<string name="category_random">Вперемешку</string>
+	<string name="share_select_ac">Выбeрите приложение:</string>
+	<string name="btn_later">Позже</string>
+	<string name="rate_cancel">Нет</string>
+	<string name="rate_yes">Да</string>
+	<string name="rate_app_dial">Оцените наше приложение!</string>
+	<string name="more_no">Нет, спасибо</string>
+	<string name="more_yes">Да</string>
+	<string name="tip_tag">#советы</string>
+	<string name="twitter_miss">Приложение Twitter не установлено</string>
+	<string name="twitter_install">Хотите установить?</string>
+	<string name="share_error">Ошибка</string>
+	<string name="share_success">Успешно опубликовано</string>
 </resources>
