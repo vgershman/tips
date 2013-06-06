@@ -30,25 +30,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-ru/home.csv" afterPath="$PROJECT_DIR$/res/raw-ru/home.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-ru/lifestyle.csv" afterPath="$PROJECT_DIR$/res/raw-ru/lifestyle.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/social/view/OAuthDialog.java" afterPath="$PROJECT_DIR$/src/com/expelabs/social/view/OAuthDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw/cooking.csv" afterPath="$PROJECT_DIR$/res/raw/cooking.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-ru/cooking.csv" afterPath="$PROJECT_DIR$/res/raw-ru/cooking.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw/home.csv" afterPath="$PROJECT_DIR$/res/raw/home.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw/lifestyle.csv" afterPath="$PROJECT_DIR$/res/raw/lifestyle.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/settings_activity.xml" afterPath="$PROJECT_DIR$/res/layout/settings_activity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-ru/strings.xml" afterPath="$PROJECT_DIR$/res/values-ru/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw/work.csv" afterPath="$PROJECT_DIR$/res/raw/work.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-ru/lifestyle.csv" afterPath="$PROJECT_DIR$/res/raw-ru/lifestyle.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tips.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1370287470719" ignored="false" />
+    <file path="/Dummy.txt" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1370546822650" ignored="false" />
     <file path="/MainMenuActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369253090384" ignored="false" />
     <file path="/main_menu_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369320436189" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369687931255" ignored="false" />
@@ -279,6 +267,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" line="119" class="com.expelabs.tips.activity.AdditionalSettingsActivity$3$1" package="com.expelabs.tips.activity">
         <option name="ENABLED" value="true" />
@@ -365,8 +355,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -442,7 +430,7 @@
       <file leaf-file-name="TipFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="264" column="82" selection-start="10211" selection-end="10211" vertical-scroll-proportion="0.2519685">
+            <state line="262" column="87" selection-start="10094" selection-end="10094" vertical-scroll-proportion="0.37468982">
               <folding>
                 <element signature="e#5897#5905#0" expanded="true" />
               </folding>
@@ -453,7 +441,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="4" selection-start="1198" selection-end="1301" vertical-scroll-proportion="-15.64">
+            <state line="23" column="4" selection-start="1198" selection-end="1301" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -462,7 +450,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values-ru/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="53" selection-start="1162" selection-end="1162" vertical-scroll-proportion="-14.96">
+            <state line="22" column="53" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -542,6 +530,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -690,8 +680,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -709,16 +697,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tips" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="DEBUGGABLE_DEVICE" value="192.168.1.202:5555" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="DEBUGGABLE_DEVICE" value="192.168.1.202:5555" />
     <property name="DEBUGGABLE_PROCESS" value="com.expelabs.tips" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="AndroidRunProguardForReleaseBuild" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -875,11 +863,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-9" width="1862" height="1098" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906458" sideWeight="0.47430408" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3169165" sideWeight="0.49786553" order="3" side_tool="false" content_ui="tabs" />
@@ -892,11 +879,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5816777" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26418242" sideWeight="0.7077088" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29229122" sideWeight="0.4914621" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26418242" sideWeight="0.45931476" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.54068524" sideWeight="0.4914621" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869855" sideWeight="0.6728972" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869855" sideWeight="0.6728972" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906458" sideWeight="0.47430408" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18848759" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -965,9 +953,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/RequestTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="71" column="0" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/vk/VkAccess.java">
@@ -979,16 +965,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/webclient/AuthClientInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="9" column="17" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/webclient/AuthListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="9" column="17" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/social/webclient/VkAuthClient.java">
@@ -1061,21 +1043,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="1198" selection-end="1301" vertical-scroll-proportion="-15.64">
+        <state line="23" column="4" selection-start="1198" selection-end="1301" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values-ru/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="53" selection-start="1162" selection-end="1162" vertical-scroll-proportion="-14.96">
+        <state line="22" column="53" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="264" column="82" selection-start="10211" selection-end="10211" vertical-scroll-proportion="0.2519685">
+        <state line="262" column="87" selection-start="10094" selection-end="10094" vertical-scroll-proportion="0.37468982">
           <folding>
             <element signature="e#5897#5905#0" expanded="true" />
           </folding>
