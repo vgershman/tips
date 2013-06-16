@@ -149,7 +149,8 @@ public class TipFragment extends Fragment {
 		try {
 			emailIntent.putExtra(Intent.EXTRA_STREAM,
 					Uri.fromFile(new File(ImageUtils.writeImageToFile(BitmapFactory.decodeStream(getActivity().getAssets()
-							.open("tipsImages/" + tip.getCategoryName() + "/" + tip.getId() + ".jpg")), "image"))));
+							.open("tipsImages/" + tip.getCategoryName() + "/" + tip.getId() + ".jpg")), "image.jpg" +
+							""))));
 		} catch (IOException e) {
 			return;
 		}
@@ -254,7 +255,7 @@ public class TipFragment extends Fragment {
 				f = new File(ImageUtils.writeImageToFile(BitmapFactory.decodeStream(getActivity().getAssets()
 						.open("tipsImages/" + tip.getCategoryName() + "/" + tip.getId() + ".jpg")), "image"));
 			} catch (IOException e) {
-				e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+				e.printStackTrace();
 			}
 			//File file = new File(URI.create(DailyTipsApp.HOSTING_BASE_URL + tip.getCategoryName().toLowerCase() + "/" + tip.getId() + ".jpg"));
 			VkAccess.post(getString(R.string.tip_tag) + '\n' + tip.getText() + '\n' + tip.getTextItalic(),
