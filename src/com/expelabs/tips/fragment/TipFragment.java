@@ -24,6 +24,7 @@ import com.expelabs.social.vk.VkAccess;
 import com.expelabs.social.webclient.AuthListener;
 import com.expelabs.social.webclient.VkAuthClient;
 import com.expelabs.tips.R;
+import com.expelabs.tips.activity.AdditionalSettingsActivity;
 import com.expelabs.tips.app.DailyTipsApp;
 import com.expelabs.tips.delegate.NavigationDelegate;
 import com.expelabs.tips.dto.Share;
@@ -31,6 +32,7 @@ import com.expelabs.tips.dto.Tip;
 import com.expelabs.tips.util.ImageUtils;
 import com.facebook.*;
 import com.facebook.android.Facebook;
+import com.flurry.android.FlurryAgent;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -42,8 +44,10 @@ import java.io.InputStream;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -142,6 +146,9 @@ public class TipFragment extends Fragment {
 	}
 
 	private void shareEmail() {
+		Map<String,String>params = new HashMap<String, String>();
+		params.put("share","email");
+		FlurryAgent.logEvent("Share",params);
 		final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
 		emailIntent.setType("text/plain");
 		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.tip_tag));
@@ -166,7 +173,9 @@ public class TipFragment extends Fragment {
 	}
 
 	private void shareTwitter() {
-
+		Map<String,String> params = new HashMap<String, String>();
+		params.put("share","twitter");
+		FlurryAgent.logEvent("Share", params);
 		List<Intent> targetedShareIntents = new ArrayList<Intent>();
 		Intent share = new Intent(android.content.Intent.ACTION_SEND);
 		share.setType("text/plain");
@@ -204,12 +213,16 @@ public class TipFragment extends Fragment {
 	}
 
 	private void shareFB() {
+		Map<String,String>params = new HashMap<String, String>();
+		params.put("share","facebook");
+		FlurryAgent.logEvent("Share",params);
 		Session session = Session.openActiveSession(getActivity(), true, new Session.StatusCallback() {
 			@Override
 			public void call(Session session, SessionState state, Exception exception) {
+
 			}
 		});
-		if (session != null) {
+		if (session != null && session.getPermissions().contains("publish_actions")) {
 			Bundle postParams = new Bundle();
 			postParams.putString("name", getString(R.string.tip_tag) + " " + tip.getText());
 			postParams.putString("caption", tip.getTextItalic());
@@ -243,10 +256,15 @@ public class TipFragment extends Fragment {
 					HttpMethod.POST, callback);
 			RequestAsyncTask task = new RequestAsyncTask(request);
 			task.execute();
+		}else{
+			startActivity(new Intent(getActivity(),AdditionalSettingsActivity.class));
 		}
 	}
 
 	private void shareVK() {
+		Map<String,String>params = new HashMap<String, String>();
+		params.put("share","vk");
+		FlurryAgent.logEvent("Share",params);
 		String uid = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, Context.MODE_PRIVATE).getString("VkUserId", "");
 		String accessToken = getActivity().getSharedPreferences(DailyTipsApp.PREFERENCES_NAME, Context.MODE_PRIVATE).getString("VkAccessToken", "");
 		if (!uid.equals("") && !accessToken.equals("")) {

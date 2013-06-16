@@ -8,6 +8,10 @@ import android.widget.ImageView;
 import com.expelabs.tips.R;
 import com.expelabs.tips.app.DailyTipsApp;
 import com.expelabs.tips.dto.Category;
+import com.flurry.android.FlurryAgent;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -45,30 +49,45 @@ public class MainMenuActivity extends Activity {
         cookingBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+				Map<String,String>params = new HashMap<String, String>();
+				params.put("category","cooking");
+				FlurryAgent.logEvent("Category selected",params);
                 goToCathegory(Category.COOKING);
             }
         });
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+				Map<String,String>params = new HashMap<String, String>();
+				params.put("category","home");
+				FlurryAgent.logEvent("Category selected",params);
                 goToCathegory(Category.HOME);
             }
         });
         lifestyleBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+				Map<String,String>params = new HashMap<String, String>();
+				params.put("category","lifestyle");
+				FlurryAgent.logEvent("Category selected",params);
                 goToCathegory(Category.LIFESTYLE);
             }
         });
         workBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+				Map<String,String>params = new HashMap<String, String>();
+				params.put("category","work");
+				FlurryAgent.logEvent("Category selected",params);
                 goToCathegory(Category.WORK);
             }
         });
         randomBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+				Map<String,String>params = new HashMap<String, String>();
+				params.put("category","random");
+				FlurryAgent.logEvent("Category selected",params);
                 goToCathegory(Category.RANDOM);
             }
         });
@@ -86,4 +105,16 @@ public class MainMenuActivity extends Activity {
         super.onResume();
         DailyTipsApp.setContext(this);
     }
+
+	@Override
+	protected void onStart() {
+		super.onStart();
+		FlurryAgent.onStartSession(this,DailyTipsApp.FLURRY_KEY);
+	}
+
+	@Override
+	protected void onStop() {
+		super.onStop();
+		FlurryAgent.onEndSession(this);
+	}
 }

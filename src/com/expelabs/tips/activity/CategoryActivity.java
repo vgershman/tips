@@ -18,6 +18,7 @@ import com.expelabs.tips.dto.Category;
 import com.expelabs.tips.dto.Tip;
 import com.expelabs.tips.util.ImageUtils;
 import com.expelabs.tips.app.*;
+import com.flurry.android.FlurryAgent;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -38,6 +39,21 @@ public class CategoryActivity extends SherlockFragmentActivity {
 	private static final String CURRENT_ITEM = "cur_item";
 	private ViewPager tipPager;
 	private TipsPagerAdapter tipsPagerAdapter;
+
+	@Override
+	protected void onStart() {
+		super.onStart();
+		FlurryAgent.onStartSession(this, DailyTipsApp.FLURRY_KEY);
+	}
+
+	@Override
+	protected void onStop() {
+		super.onStop();
+		Map<String,String>params = new HashMap<String, String>();
+		params.put(currentCategory.toString(),DailyTipsApp.getScrollngCounter()+"");
+		FlurryAgent.logEvent("ViewCount",params);
+		FlurryAgent.onEndSession(this);
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -178,6 +194,7 @@ public class CategoryActivity extends SherlockFragmentActivity {
 				onBackPressed();
 				return true;
 			case R.id.action_settings:
+				FlurryAgent.logEvent("Open screen settings");
 				startActivity(new Intent(CategoryActivity.this, AdditionalSettingsActivity.class));
 				overridePendingTransition(R.anim.appear_from_right, R.anim.disappear_to_left);
 				return true;
@@ -190,6 +207,9 @@ public class CategoryActivity extends SherlockFragmentActivity {
 	}
 
 	private void share() {
+		Map<String,String>params = new HashMap<String, String>();
+		params.put("share","default");
+		FlurryAgent.logEvent("Share",params);
 		Tip tip2Share = tipsPagerAdapter.getCurrent().getTip();
 		Intent share = new Intent(android.content.Intent.ACTION_SEND);
 		share.setType("plain/text"); // put here your mime type
@@ -211,4 +231,6 @@ public class CategoryActivity extends SherlockFragmentActivity {
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);    //To change body of overridden methods use File | Settings | File Templates.
 	}
+
+
 }

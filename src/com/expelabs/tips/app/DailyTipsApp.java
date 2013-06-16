@@ -12,6 +12,7 @@ import android.net.Uri;
 import com.expelabs.tips.R;
 import com.expelabs.tips.activity.AdditionalSettingsActivity;
 import com.expelabs.tips.util.BillingUtils;
+import com.flurry.android.FlurryAgent;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -36,7 +37,7 @@ public class DailyTipsApp extends Application {
     private static int scrollngCounter;
 
     public static final String GOOGLE_PLAY_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwaper77Q1Aj7/bLzkKLimOGL7QZxZNYGZhqgI2gRhqxKsz1MthpUELHCmD6NMpQhvTqGMS5kAMiXOvlOeCYw6E8uGg2ABOXfVy+8Ul3yr0YcQdi6CW0mrDbbPwUk/HtHPz8fw4H/42CMncw5qGckhKsNx027QQGPh4tgP3gyNDkhVL7jUbSWDX6xn/8KpRhdprRjcQxfZ0yDQZpOixYLTYOtT9F/opEng9ORbfTmN3BMtnZIpJqB/dSbcgRUTNVWNQ8ioIZHZTziHeLAL4504KEpx9i6wPdi8TIAH8Qt9Xt/21XoTmU/Jn+X0+T/vha3955ADmvGhasyKNfwI8UfRQIDAQAB";
-
+	public static final String FLURRY_KEY = "ZX5XCC6CTMCX5JTK77PT";
     private static BillingUtils billingUtils;
     private static Context appContext;
     public static String HOSTING_BASE_URL = "http://alexeypetrov.com/dailytip/";
@@ -53,6 +54,10 @@ public class DailyTipsApp extends Application {
     public static BillingUtils getBillingUtils() {
         return billingUtils;
     }
+
+	public static int getScrollngCounter(){
+		return scrollngCounter;
+	}
 
     public static Map<String,Boolean> getPurchases(){
         HashMap<String,Boolean>result = new HashMap<String, Boolean>();
@@ -88,12 +93,19 @@ public class DailyTipsApp extends Application {
                 builder.setNegativeButton(appContext.getString(R.string.more_no), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
+						Map<String,String>params = new HashMap<String, String>();
+						params.put("answer","no");
+						FlurryAgent.logEvent("More tips question", params);
+						dialog.cancel();
+
                     }
                 });
                 builder.setPositiveButton(appContext.getString(R.string.more_yes),new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+						Map<String,String>params = new HashMap<String, String>();
+						params.put("answer","yes");
+						FlurryAgent.logEvent("More tips question",params);
                         appContext.startActivity(new Intent(appContext, AdditionalSettingsActivity.class));
                         ((Activity)appContext).overridePendingTransition(R.anim.appear_from_right, R.anim.disappear_to_left);
                     }
