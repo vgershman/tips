@@ -28,8 +28,8 @@ import java.util.Map;
 public class DailyTipsApp extends Application {
 
     public static final String PREFERENCES_NAME = "tips_preferences";
-    //public static final String SKU_TOTAL = "com.expelabs.tips.total";
-    public static final String SKU_TOTAL = "android.test.purchased";
+    public static final String SKU_TOTAL = "com.expelabs.tips.total";
+    //public static final String SKU_TOTAL = "android.test.purchased";
 	public static final String SKU_COOKING = "com.expelabs.tips.cooking";
     public static final String SKU_HOME = "com.expelabs.tips.home";
     public static final String SKU_WORK = "com.expelabs.tips.work";
