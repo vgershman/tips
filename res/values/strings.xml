@@ -22,5 +22,5 @@
 	<string name="twitter_miss">Twitter App is missing</string>
 	<string name="twitter_install">Do you want to install?</string>
 	<string name="share_error">Something went wrong</string>
-	<string name="share_success">Success</string>
+	<string name="share_success">Tip has been shared successfully</string>
 </resources>

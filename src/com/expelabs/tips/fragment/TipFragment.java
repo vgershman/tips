@@ -76,12 +76,18 @@ public class TipFragment extends Fragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		tip = (Tip) getArguments().get("tip");
+
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 							 Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.tip_item, null, false);
+        int width = getActivity().getWindowManager().getDefaultDisplay().getWidth();
+        if(width <= 480){
+            ((TextView) view.findViewById(R.id.tip_text)).setTextSize(14);
+            ((TextView) view.findViewById(R.id.tip_text_ital)).setTextSize(14);
+        }
 		((TextView) view.findViewById(R.id.tip_text)).setText(tip.getText());
 		((TextView) view.findViewById(R.id.tip_text_ital)).setText(tip.getTextItalic());
 		view.findViewById(R.id.left_btn).setOnClickListener(new View.OnClickListener() {
@@ -142,6 +148,7 @@ public class TipFragment extends Fragment {
 		} catch (IOException e) {
 			e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
 		}
+
 		return view;
 	}
 
