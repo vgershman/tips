@@ -157,7 +157,8 @@ public class DailyTipsApp extends Application {
 		return installed;
 	}
 
-
-
+    public static Context getAppContext() {
+        return appContext;
+    }
 }
 

@@ -1,22 +1,11 @@
 package com.expelabs.social.view;
 
 import android.app.Dialog;
-import android.app.DialogFragment;
-import android.app.FragmentTransaction;
 import android.content.Context;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
-import android.webkit.CacheManager;
-import android.webkit.CookieManager;
-import android.webkit.CookieSyncManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.LinearLayout;
 import com.expelabs.social.webclient.AuthClientInterface;
-import com.expelabs.tips.R;
 
 /**
  * Created with IntelliJ IDEA.

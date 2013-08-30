@@ -119,9 +119,9 @@ public class CategoryActivity extends SherlockFragmentActivity {
 
 	public List<Tip> loadTips(Category category, int tipsFileResourceId) {
 		Map<String, Boolean> purchases = DailyTipsApp.getPurchases();
-		int limit = 25;
+		int limit = 30;
 		if (purchases.get(DailyTipsApp.SKU_TOTAL) || purchases.get(getPackageName() + "." + category.name().toLowerCase())) {
-			limit = 125;
+			limit = 130;
 		}
 		List<Tip> results = new ArrayList<Tip>();
 		CSVReader reader = new CSVReader(new BufferedReader(new InputStreamReader(getResources().openRawResource(tipsFileResourceId))));
@@ -137,7 +137,7 @@ public class CategoryActivity extends SherlockFragmentActivity {
 				newTip.setId(i);
 				newTip.setCategoryName(category.name().toLowerCase());
 				newTip.setText(nextLine[0]);
-				newTip.setTextItalic(nextLine[1]);
+ 				newTip.setTextItalic(nextLine[1]);
 				results.add(newTip);
 			}
 		} catch (IOException e) {

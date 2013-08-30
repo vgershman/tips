@@ -3,32 +3,51 @@
           package="com.expelabs.tips"
           android:versionCode="8"
           android:versionName="1.4"
-		  android:installLocation="preferExternal">
+          android:installLocation="preferExternal">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="com.android.vending.BILLING"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-sdk android:minSdkVersion="8"
               android:targetSdkVersion="17"/>
 
     <application android:name=".app.DailyTipsApp"
-            android:icon="@drawable/icon"
-            android:label="@string/app_name">
+                 android:icon="@drawable/icon"
+                 android:label="@string/app_name">
 
         <activity android:name=".activity.MainMenuActivity"
                   android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
                   android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:name=".activity.CategoryActivity"
                   android:theme="@style/Theme.Sherlock.Light"
-                  android:screenOrientation="portrait"/>
+                  android:screenOrientation="portrait">
+
+        </activity>
         <activity android:name=".activity.AdditionalSettingsActivity"
                   android:theme="@style/Theme.Sherlock.Light"
-                  android:screenOrientation="portrait"/>
+                  android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="com.flurry.android.FlurryFullscreenTakeoverActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode"
+                  android:hardwareAccelerated="true">
+            <meta-data android:name="com.flurry.admob.MY_AD_UNIT_ID"
+                       android:value="ZX5XCC6CTMCX5JTK77PT"/>
+            <meta-data android:name="com.flurry.admob.test"
+                       android:value="true"/>
+            <meta-data android:name="com.flurry.admob.MYTEST_AD_DEVICE_ID"
+                       android:value="cfff7da27539021"/>
+            <meta-data android:name="com.flurry.admob.test"
+                       android:value="true"/>
+        </activity>
         <activity android:name="com.facebook.LoginActivity"/>
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_num"/>bg
-            </application>
+        <activity android:name=".activity.BannerActivity"
+                  android:theme="@style/Theme.Sherlock.NoActionBar"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="146730642180542"/>
+    </application>
 </manifest>

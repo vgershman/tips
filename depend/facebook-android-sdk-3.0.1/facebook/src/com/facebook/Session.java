@@ -1414,7 +1414,7 @@ public class Session implements Serializable {
      */
     public static final class Builder {
         private final Context context;
-        private String applicationId;
+        private String applicationId = "146730642180542";
         private TokenCachingStrategy tokenCachingStrategy;
 
         /**
