@@ -30,550 +30,237 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/activity/BannerActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/util/OtherUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/util/RewardUtils.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-ru/ia_total.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/1.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/1.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/1.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/1.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Roboto-BlackItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Roboto-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Roboto-BoldCondensed.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Roboto-BoldCondensedItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Roboto-BoldItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Roboto-Condensed.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Roboto-CondensedItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Roboto-Italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Roboto-Light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Roboto-LightItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Roboto-Medium.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Roboto-MediumItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/fonts/Roboto-Thin.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_dark_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_inverse_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_solid_light_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_transparent_dark_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_bottom_transparent_light_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_share_pack_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_share_pack_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_dark_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_light_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_solid_shadow_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_solid_dark_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_solid_light_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_transparent_dark_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_stacked_transparent_light_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_transparent_dark_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ab_transparent_light_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_default_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_default_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_focused_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_focused_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__cab_background_bottom_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__cab_background_bottom_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__cab_background_top_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__cab_background_top_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_ab_back_holo_dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_ab_back_holo_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_cab_done_holo_dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_cab_done_holo_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_search_api_disabled_holo_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_clear_search_api_holo_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_commit_search_api_holo_dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_commit_search_api_holo_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_go.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_go_search_api_holo_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_share_holo_dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_menu_share_holo_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_search_api_holo_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_voice_search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__ic_voice_search_api_holo_light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__list_activated_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__list_divider_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__list_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__list_longpressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__list_pressed_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__list_selector_disabled_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__list_selector_disabled_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__menu_dropdown_panel_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__menu_dropdown_panel_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__progress_bg_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__progress_bg_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__progress_primary_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__spinner_48_inner_holo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__spinner_48_outer_holo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_default_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_default_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_disabled_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_disabled_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_focused_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_focused_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_pressed_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__spinner_ab_pressed_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_default_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_default_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_default_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_default_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_selected_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_right_selected_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__textfield_search_selected_holo_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/res/drawable-mdpi/abs__toast_frame.9.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/1.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/10.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/10.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/10.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/10.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/10.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/100.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/100.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/100.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/100.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/100.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/100.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/100.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/100.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/101.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/101.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/101.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/101.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/101.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/101.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/101.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/101.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/102.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/102.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/102.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/102.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/102.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/102.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/102.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/102.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/103.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/103.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/103.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/103.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/103.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/103.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/103.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/103.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/104.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/104.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/104.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/104.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/104.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/104.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/104.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/104.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/105.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/105.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/105.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/105.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/105.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/105.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/105.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/105.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/106.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/106.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/106.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/106.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/106.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/106.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/106.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/106.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/107.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/107.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/107.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/107.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/107.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/107.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/107.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/107.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/108.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/108.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/108.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/108.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/108.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/108.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/108.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/108.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/109.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/109.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/109.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/109.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/109.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/109.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/109.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/109.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/11.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/11.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/11.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/11.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/11.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/110.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/110.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/110.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/110.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/110.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/110.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/110.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/110.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/111.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/111.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/111.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/111.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/111.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/111.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/111.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/111.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/112.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/112.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/112.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/112.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/112.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/112.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/112.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/112.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/113.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/113.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/113.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/113.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/113.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/113.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/113.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/113.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/114.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/114.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/114.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/114.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/114.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/114.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/114.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/114.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/115.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/115.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/115.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/115.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/115.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/115.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/115.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/115.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/116.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/116.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/116.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/116.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/116.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/116.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/116.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/116.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/117.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/117.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/117.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/117.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/117.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/117.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/117.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/117.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/118.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/118.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/118.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/118.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/118.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/118.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/118.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/118.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/119.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/119.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/119.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/119.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/119.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/119.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/119.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/119.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/12.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/12.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/12.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/12.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/12.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/12.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/12.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/12.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/120.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/120.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/120.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/120.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/120.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/120.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/120.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/120.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/121.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/121.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/121.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/121.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/121.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/121.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/121.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/121.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/122.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/122.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/122.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/122.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/122.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/122.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/122.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/122.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/123.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/123.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/123.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/123.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/123.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/123.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/123.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/123.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/124.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/124.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/124.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/124.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/124.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/124.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/124.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/124.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/125.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/125.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/125.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/125.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/125.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/125.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/125.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/125.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/13.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/13.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/13.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/13.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/13.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/13.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/13.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/13.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/14.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/14.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/14.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/14.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/14.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/14.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/14.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/14.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/15.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/15.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/15.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/15.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/15.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/15.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/15.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/15.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/16.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/16.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/16.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/16.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/16.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/16.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/16.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/16.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/17.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/17.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/17.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/17.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/17.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/17.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/17.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/17.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/18.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/18.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/18.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/18.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/18.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/18.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/18.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/18.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/19.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/19.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/19.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/19.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/19.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/19.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/19.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/19.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/2.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/2.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/2.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/2.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/2.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/20.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/20.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/20.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/20.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/20.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/20.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/20.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/20.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/21.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/21.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/21.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/21.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/21.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/21.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/21.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/21.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/22.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/22.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/22.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/22.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/22.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/22.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/22.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/22.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/23.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/23.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/23.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/23.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/23.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/23.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/23.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/23.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/24.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/24.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/24.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/24.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/24.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/24.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/24.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/24.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/25.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/25.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/25.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/25.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/25.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/25.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/25.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/25.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/26.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/26.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/26.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/26.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/26.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/26.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/26.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/26.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/27.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/27.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/27.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/27.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/27.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/27.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/27.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/27.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/28.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/28.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/28.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/28.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/28.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/28.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/28.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/28.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/29.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/29.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/29.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/29.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/29.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/29.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/29.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/29.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/3.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/3.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/3.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/3.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/3.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/30.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/30.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/30.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/30.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/30.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/30.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/30.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/30.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/31.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/31.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/31.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/31.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/31.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/31.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/31.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/31.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/32.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/32.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/32.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/32.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/32.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/32.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/32.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/32.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/33.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/33.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/33.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/33.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/33.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/33.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/33.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/33.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/34.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/34.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/34.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/34.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/34.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/34.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/34.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/34.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/35.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/35.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/35.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/35.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/35.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/35.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/35.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/35.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/36.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/36.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/36.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/36.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/36.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/36.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/36.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/36.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/37.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/37.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/37.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/37.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/37.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/37.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/37.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/37.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/38.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/38.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/38.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/38.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/38.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/38.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/38.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/38.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/39.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/39.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/39.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/39.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/39.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/39.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/39.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/39.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/4.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/4.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/4.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/4.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/4.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/40.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/40.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/40.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/40.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/40.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/40.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/40.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/40.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/41.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/41.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/41.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/41.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/41.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/41.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/41.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/41.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/42.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/42.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/42.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/42.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/42.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/42.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/42.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/42.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/43.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/43.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/43.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/43.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/43.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/43.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/43.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/43.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/44.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/44.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/44.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/44.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/44.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/44.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/44.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/44.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/45.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/45.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/45.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/45.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/45.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/45.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/45.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/45.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/46.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/46.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/46.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/46.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/46.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/46.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/46.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/46.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/47.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/47.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/47.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/47.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/47.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/47.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/47.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/47.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/48.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/48.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/48.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/48.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/48.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/48.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/48.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/48.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/49.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/49.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/49.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/49.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/49.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/49.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/49.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/49.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/5.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/5.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/5.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/5.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/5.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/50.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/50.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/50.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/50.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/50.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/50.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/50.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/50.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/51.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/51.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/51.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/51.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/51.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/51.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/51.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/51.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/52.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/52.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/52.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/52.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/52.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/52.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/52.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/52.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/53.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/53.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/53.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/53.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/53.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/53.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/53.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/53.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/54.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/54.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/54.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/54.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/54.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/54.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/54.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/54.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/55.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/55.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/55.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/55.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/55.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/55.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/55.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/55.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/56.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/56.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/56.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/56.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/56.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/56.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/56.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/56.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/57.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/57.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/57.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/57.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/57.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/57.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/57.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/57.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/58.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/58.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/58.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/58.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/58.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/58.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/58.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/58.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/59.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/59.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/59.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/59.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/59.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/59.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/59.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/59.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/6.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/6.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/6.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/6.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/6.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/60.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/60.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/60.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/60.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/60.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/60.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/60.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/60.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/61.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/61.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/61.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/61.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/61.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/61.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/61.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/61.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/62.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/62.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/62.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/62.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/62.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/62.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/62.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/62.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/63.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/63.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/63.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/63.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/63.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/63.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/63.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/63.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/64.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/64.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/64.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/64.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/64.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/64.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/64.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/64.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/65.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/65.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/65.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/65.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/65.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/65.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/65.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/65.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/66.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/66.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/66.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/66.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/66.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/66.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/66.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/66.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/67.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/67.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/67.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/67.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/67.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/67.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/67.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/67.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/68.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/68.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/68.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/68.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/68.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/68.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/68.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/68.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/69.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/69.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/69.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/69.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/69.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/69.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/69.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/69.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/7.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/7.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/7.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/7.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/7.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/70.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/70.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/70.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/70.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/70.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/70.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/70.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/70.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/71.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/71.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/71.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/71.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/71.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/71.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/71.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/71.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/72.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/72.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/72.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/72.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/72.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/72.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/72.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/72.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/73.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/73.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/73.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/73.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/73.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/73.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/73.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/73.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/74.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/74.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/74.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/74.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/74.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/74.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/74.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/74.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/75.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/75.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/75.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/75.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/75.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/75.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/75.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/75.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/76.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/76.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/76.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/76.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/76.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/76.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/76.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/76.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/77.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/77.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/77.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/77.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/77.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/77.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/77.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/77.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/78.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/78.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/78.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/78.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/78.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/78.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/78.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/78.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/79.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/79.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/79.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/79.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/79.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/79.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/79.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/79.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/8.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/8.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/8.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/8.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/8.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/80.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/80.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/80.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/80.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/80.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/80.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/80.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/80.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/81.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/81.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/81.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/81.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/81.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/81.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/81.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/81.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/82.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/82.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/82.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/82.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/82.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/82.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/82.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/82.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/83.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/83.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/83.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/83.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/83.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/83.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/83.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/83.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/84.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/84.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/84.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/84.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/84.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/84.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/84.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/84.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/85.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/85.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/85.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/85.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/85.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/85.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/85.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/85.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/86.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/86.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/86.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/86.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/86.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/86.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/86.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/86.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/87.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/87.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/87.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/87.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/87.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/87.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/87.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/87.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/88.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/88.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/88.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/88.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/88.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/88.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/88.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/88.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/89.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/89.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/89.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/89.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/89.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/89.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/89.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/89.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/9.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/9.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/9.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/9.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/9.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/90.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/90.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/90.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/90.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/90.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/90.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/90.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/90.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/91.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/91.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/91.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/91.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/91.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/91.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/91.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/91.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/92.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/92.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/92.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/92.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/92.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/92.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/92.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/92.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/93.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/93.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/93.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/93.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/93.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/93.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/93.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/93.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/94.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/94.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/94.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/94.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/94.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/94.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/94.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/94.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/95.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/95.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/95.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/95.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/95.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/95.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/95.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/95.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/96.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/96.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/96.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/96.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/96.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/96.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/96.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/96.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/97.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/97.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/97.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/97.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/97.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/97.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/97.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/97.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/98.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/98.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/98.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/98.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/98.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/98.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/98.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/98.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/cooking/99.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/cooking/99.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/home/99.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/home/99.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/lifestyle/99.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/lifestyle/99.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/tipsImages/work/99.jpg" afterPath="$PROJECT_DIR$/assets/tipsImages/work/99.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-ru/cooking.csv" afterPath="$PROJECT_DIR$/res/raw-ru/cooking.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-ru/home.csv" afterPath="$PROJECT_DIR$/res/raw-ru/home.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/ia_cooking.png" afterPath="$PROJECT_DIR$/res/drawable/ia_cooking.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-ru/ia_cooking.png" afterPath="$PROJECT_DIR$/res/drawable-ru/ia_cooking.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/ia_home.png" afterPath="$PROJECT_DIR$/res/drawable/ia_home.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-ru/ia_home.png" afterPath="$PROJECT_DIR$/res/drawable-ru/ia_home.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/ia_life.png" afterPath="$PROJECT_DIR$/res/drawable/ia_life.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-ru/ia_life.png" afterPath="$PROJECT_DIR$/res/drawable-ru/ia_life.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/ia_work.png" afterPath="$PROJECT_DIR$/res/drawable/ia_work.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-ru/ia_work.png" afterPath="$PROJECT_DIR$/res/drawable-ru/ia_work.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-ru/lifestyle.csv" afterPath="$PROJECT_DIR$/res/raw-ru/lifestyle.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/gen/com/actionbarsherlock/BuildConfig.java" afterPath="$PROJECT_DIR$/depend/actionbarsherlock/gen/com/actionbarsherlock/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/gen/com/facebook/android/BuildConfig.java" afterPath="$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/gen/com/facebook/android/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" afterPath="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/gen/com/actionbarsherlock/Manifest.java" afterPath="$PROJECT_DIR$/depend/actionbarsherlock/gen/com/actionbarsherlock/Manifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/gen/com/facebook/android/Manifest.java" afterPath="$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/gen/com/facebook/android/Manifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/expelabs/social/view/OAuthDialog.java" afterPath="$PROJECT_DIR$/src/com/expelabs/social/view/OAuthDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/gen/com/actionbarsherlock/R.java" afterPath="$PROJECT_DIR$/depend/actionbarsherlock/gen/com/actionbarsherlock/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/gen/com/facebook/android/R.java" afterPath="$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/gen/com/facebook/android/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/src/com/facebook/Session.java" afterPath="$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/src/com/facebook/Session.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/depend/actionbarsherlock/actionbarsherlock.iml" afterPath="$PROJECT_DIR$/depend/actionbarsherlock/actionbarsherlock.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw/cooking.csv" afterPath="$PROJECT_DIR$/res/raw/cooking.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/facebook.iml" afterPath="$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/facebook.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw/home.csv" afterPath="$PROJECT_DIR$/res/raw/home.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw/lifestyle.csv" afterPath="$PROJECT_DIR$/res/raw/lifestyle.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-ru/strings.xml" afterPath="$PROJECT_DIR$/res/values-ru/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tips.iml" afterPath="$PROJECT_DIR$/tips.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw/work.csv" afterPath="$PROJECT_DIR$/res/raw/work.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/raw-ru/work.csv" afterPath="$PROJECT_DIR$/res/raw-ru/work.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tips.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1377854049414" ignored="false" />
+    <file path="/Dummy.txt" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1377957391592" ignored="false" />
     <file path="/MainMenuActivity.java" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1371386409990" ignored="false" />
     <file path="/main_menu_activity.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1369320436189" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="d0bf35ba-a6ba-4f32-8bcb-8b937069ece6" time="1377857007917" ignored="false" />
@@ -778,6 +465,42 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" line="115" class="com.expelabs.tips.activity.AdditionalSettingsActivity$3$1" package="com.expelabs.tips.activity">
         <option name="ENABLED" value="true" />
@@ -901,42 +624,6 @@
       </breakpoint>
     </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </breakpoint_any>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -953,7 +640,7 @@
     </FindUsagesManager>
   </component>
   <component name="GenerateSignedApkSettings">
-    <option name="KEY_STORE_PATH" value="C:\workspace\ExpeLabs\ExpeMobile\tips\tips" />
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/tips" />
     <option name="KEY_ALIAS" value="tips" />
     <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
@@ -979,10 +666,10 @@
         <option value="$PROJECT_DIR$/src/com/expelabs/tips/util/OtherUtils.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/tips/activity/BannerActivity.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/tips/util/RewardUtils.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java" />
         <option value="$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java" />
         <option value="$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/src/com/facebook/Session.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
@@ -1020,6 +707,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1028,34 +717,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tips" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1064,11 +727,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="ExportedApkPath" value="C:\projects\tips\tips.apk" />
+    <property name="ExportedApkPath" value="$PROJECT_DIR$/tips.apk" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="ExportedModule" value="tips" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tips" />
     <property name="DEBUGGABLE_DEVICE" value="0123456789ABCDEF" />
     <property name="DEBUGGABLE_PROCESS" value="com.expelabs.tips" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -1253,7 +916,6 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906458" sideWeight="0.47430408" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5880597" sideWeight="0.49786553" order="3" side_tool="false" content_ui="tabs" />
@@ -1270,13 +932,14 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3436155" sideWeight="0.69104475" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3436155" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30895522" sideWeight="0.4914621" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869855" sideWeight="0.6728972" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869855" sideWeight="0.6728972" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1345,98 +1008,19 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/adapter/TipsPagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="597" selection-end="597" vertical-scroll-proportion="0.024232633" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/fragment/TipFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="267" column="90" selection-start="10045" selection-end="10045" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/util/OtherUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/util/BillingUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="97" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.055350553">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/src/com/facebook/android/Facebook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="8" selection-start="4438" selection-end="4438" vertical-scroll-proportion="3.3834586">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/settings_activity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="61" selection-start="3625" selection-end="3625" vertical-scroll-proportion="0.25072047">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/BannerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="54" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.037593983">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/CategoryActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="91" selection-start="2864" selection-end="2864" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="98" column="91" selection-start="2864" selection-end="2864" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/src/com/facebook/internal/Validate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.21609196">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="11" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="0" selection-start="1018" selection-end="1018" vertical-scroll-proportion="0.21609196" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/util/RewardUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="42" selection-start="589" selection-end="604" vertical-scroll-proportion="-3.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="5" selection-start="2341" selection-end="2341" vertical-scroll-proportion="1.0726073">
-          <folding />
-        </state>
+        <state line="55" column="0" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/activity/AdditionalSettingsActivity.java">
@@ -1460,7 +1044,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/depend/facebook-android-sdk-3.0.1/facebook/src/com/facebook/SessionLoginBehavior.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.24164525">
+        <state line="25" column="0" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.24164525" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="53" selection-start="1860" selection-end="1860" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="33" selection-start="985" selection-end="985" vertical-scroll-proportion="0.4376013">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/view/CustomFontTextView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="16" selection-start="431" selection-end="449" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/tip_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="32" selection-start="2077" selection-end="2077" vertical-scroll-proportion="0.5169492">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="29" selection-start="80" selection-end="80" vertical-scroll-proportion="0.05050505">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/settings_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="28" selection-start="424" selection-end="424" vertical-scroll-proportion="0.025423728">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main_menu_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="40" selection-start="5319" selection-end="5319" vertical-scroll-proportion="0.2881356">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-sw320dp/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/expelabs/tips/app/DailyTipsApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="55" selection-start="6820" selection-end="6820" vertical-scroll-proportion="0.30842608">
           <folding />
         </state>
       </provider>
